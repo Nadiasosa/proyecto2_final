@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-</head>
+    <head>
+        <!-- -----------MetaTags----------- -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="SmartPark">
+        <meta name="description" content="En SmartPark podras encontrar un sitio donde guardar tu auto ademas de tener servicios adicionaes.">
+        <meta name="keywords" content="estacionamiento,tienda,auto electricos">
+        <meta name="author" content="Lightning Innovation">
+        <!-- -----------CSS----------- -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- -----------Scripts----------- -->
+        <script src="/js/navBar.js" defer></script>
+    
+        <!-- ----------------------------- -->
+        <title>SmartPark: Contacto</title>
+    </head>
 <body>
-    <header>
-        <div>
-            <a href="index.html"><img src="../imagenes/logo_modificado.jpg"></a>
+    <header class="sticky "  id="navegacion" >
+        <nav class="topnav" id="myTopnav">
+          <div id="logo_Menu">
+            <a href="#" id="logo"><img src="/imagenes/Logos/pixelcut2png.png"></a>
+            <div id="menu" class="hamburger-menu" onclick="menu()">
+                <div id="linea1" class="line"></div>
+                <div id="linea2" class="line"></div>
+                <div id="linea3" class="line"></div>
+            </div>
         </div>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="reserva.html">Reserva</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-
-
+                <div class="display" id="myLinksAnchor">
+                <a class="links item " id="aInicio" href="/index.html">Inicio</a>
+                <a class="links item" id="aReserva" href="/html/reserva.html">Reserva</a>
+                <a class="links item" id="aNosotros" href="/html/nosotros.html">Nosotros</a>
+                <a class="links item" id="aContacto" href="/html/contacto.html">Contacto</a>
+            </div>
         </nav>
     </header>
-    <div id="hero"></div>
+    <div class="hero" id="hero_contacto"></div>
     <main>
         <div id="contacto">
             <form action="">

@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #2f2f2f;
+}
+
+header {
+    width: 100vh;
+    margin: 0;
+}
+
+#main_reserva{
+    padding-top: 10vh;
+    height: 100vh;
+    background: url("/imagenes/reserva.jpg") center ;
+}
+
+
+/*---------------------------------------- NAVBAR  */
+#navegacion {
+    overflow: hidden;
+    background-color: #ffffff80;
+    border: 1px solid #f7f7f780;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+#navegacion.solid {
+  /* clear: both; */
+  background: #f2f2f2; /* Solid color */
+  border: 1px solid #f2f2f2;
+  color: #2f2f2f;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+
+
+.item {
+    display: block;
+    color: #2f2f2f;
+    background: #514eff2c;
+    border-radius: 4px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .item:hover {
+    background: #514eff69;
+    backdrop-filter: blur(10px);
+    
+    -webkit-backdrop-filter: blur(10px);
+    color: #f2f2f2;
+}
+
+.topnav a img {
+    width: 100%;
+    height: 40px;
+}
+
+.display {
+    display: none;
+}
+
+.myLinks {
+    display: block;
+}
+
+#logo_Menu {
+    justify-content: space-between;
+    display: flex;
+}
+
+#logo img {
+    width: 90px;
+    height: auto;
+}
+
+#contHamb {
+    width: 70%;
+    height: 40px;
+    float: left;
+}
+
+.hamburger-menu {
+    width: 8%;
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-right: 3.5%;
+    transform: rotate(0deg);
+    transition: 1s;
+    float: right;
+    
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #2f2f2f;
+}
+
+.menu-rotate {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+.hero {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#hero_inicio {
+    background-image: url("imagenes/inicio.jpg");
+}
+#hero_nosotros {
+    background-image: url("imagenes/nosotros.jpg");
+}
+#hero_contacto {
+    background-image: url("imagenes/contacto.jpg");
+}
+
+@media (min-width: 375px) {
+    .hamburger-menu {
+        width: 8%;
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 425px) {
+    .hamburger-menu {
+        width: 5.5%;
+        height: 4vh;
+        margin-top: 4%;
+        margin-right: 4%
+    }
+    .topnav{
+      padding: 0 10px;
+    }
+}
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .item {
+        width: 0px;
+        display: inline;
+    }
+    #logo_Menu {
+        width: 30%;
+    }
+    .myLinksAnchors {
+        width: 70%;
+        justify-content: space-between;
+    }
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px;
+    }
+    .links {
+        text-align: center;
+        padding: 5px 10px;
+    }
+}
+

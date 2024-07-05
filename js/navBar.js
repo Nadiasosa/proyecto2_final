@@ -1,4 +1,5 @@
 function menu(){
+    // Funcion al dar click al boton
     girar();
     myLinks();
     anchors();
@@ -30,3 +31,15 @@ function anchors(){
         f.className = "display";
     }
 }
+
+// evento para cambiar el estado de la barra
+document.addEventListener('scroll', function (event) {
+    const navBar = document.getElementById("navegacion");
+
+    if (window.scrollY > 10){
+        navBar.classList.add('solid');
+    } else {
+        navBar.classList.remove('solid');
+    }
+})
+
