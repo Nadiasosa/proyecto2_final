@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/java.js" defer></script>
 </head>
 
 <body>
     <div id="cPadre">
-    <header>
-        <div>
-            <a href="index.html"><img src="imagenes/logo_modificado.jpg"></a>
-        </div>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="html/reserva.html">Reserva</a>
-            <a href="html/nosotros.html">Nosotros</a>
-            <a href="html/contacto.html">Contacto</a>
-
-
-        </nav>
-    </header>
-    <div id="hero"></div>
+        <header class="acrylic"  id="navegacion">
+            <nav class="topnav" id="myTopnav">
+              <div id="logoContent">
+                <a href="#" id="logoC"><img src="imagenes/logo_modificado.jpg"></a>
+                <div id="menu" class="hamburger-menu" onclick="menu()">
+                    <div id="linea1" class="line"></div>
+                    <div id="linea2" class="line"></div>
+                    <div id="linea3" class="line"></div>
+                </div>
+            </div>
+                    <div class="display" id="myLinksAnchor">
+                    <a class="links item" id="aInicio" href="#inicio">Inicio</a>
+                    <a class="links item" id="aReserva" href="#reserva">Reserva</a>
+                    <a class="links item" id="aNosotros" href="#nosotros">Nosotros</a>
+                    <a class="links item" id="aContacto" href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+    <div class="hero" id="hero_inicio"></div>
     <main>
         <section id="seccion_servicios">
             <h2>Servicios</h2>

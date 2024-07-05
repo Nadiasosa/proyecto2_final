@@ -1,5 +1,176 @@
-#cPadre{
-    width:100%;
-    margin:auto;
+*{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    z-index: 1000;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+  }
+body{
+    background-color: red;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .item:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav a img{
+    width: 100%;
+    height: 40px;
+  }
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .display {
+    display: none;
+  }
+  
+  .myLinks {
+    display: block;
+  }
+
+  #logoContent{
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  #logoC{
+    width: 40%;
+  }
+  
+  #contHamb{
+    width: 70%;
+    height: 40px;
+    float: left;
+  }
+
+
+.hamburger-menu {
+    width: 8%; 
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-right: 3.5%;
+    transform: rotate(0deg);
+    transition: 1s;
+    float: right;
+    }
+
+    .line {
+    height: 3px;
+    }
+
+    #linea1{
+        background-color: burlywood;
+    }
+
+    #linea2{
+        background-color: saddlebrown;
+    }
+
+    #linea3{
+        background-color: burlywood;
+    }
+
+    .menu-rotate{
+        transform: rotate(90deg);
+        transition: 1s;
+    }
+    .hero{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100vw;
+        height:100vh;
+    }
+    #hero_inicio{
+        background-image:url("imagenes/inicio.jpg.jpg");
+
+    }
+
+@media (min-width: 375px){
+    .hamburger-menu{
+        width: 7.5%;
+        margin-top: 3.5%;
+    }
+}
+
+@media (min-width: 425px){
+    .hamburger-menu{
+        width: 5.5%;
+        margin-top: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+@media (min-width:768px){
+  .hamburger-menu{
+    display:none;
+  }
+.display{
+  display:block;
+} 
+.item{
+  width:0px;
+  display: inline;
+  
+}
+#logoContent{
+  width:30%;
+
+}
+.myLinksAnchors{
+  width:70%;
+  justify-content:space-between;
+}
+.topnav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:5px 30px;
+}
+.links{
+  text-align:center;
+  padding:15px;
+}
+
 
 }
