@@ -44,7 +44,10 @@ header {
   width: 100vw;
 }
 
-
+#logo{
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
 
 .item {
     display: block;
@@ -63,11 +66,6 @@ header {
     
     -webkit-backdrop-filter: blur(10px);
     color: #f2f2f2;
-}
-
-.topnav a img {
-    width: 100%;
-    height: 40px;
 }
 
 .display {
@@ -100,8 +98,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 4%;
-    margin-right: 3.5%;
+    margin-top: 6%;
+    margin-right: 7%;
     transform: rotate(0deg);
     transition: 1s;
     float: right;
@@ -139,15 +137,14 @@ header {
     .hamburger-menu {
         width: 8%;
         margin-top: 6%;
+        margin-right: 6%;
     }
 }
 
 @media (min-width: 425px) {
     .hamburger-menu {
-        width: 5.5%;
-        height: 4vh;
-        margin-top: 4%;
-        margin-right: 4%
+        margin-top: 5%;
+        margin-right: 2.5%
     }
     .topnav{
       padding: 0 10px;

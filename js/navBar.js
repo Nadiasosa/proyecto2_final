@@ -33,8 +33,8 @@ function anchors(){
 }
 
 // evento para cambiar el estado de la barra
-document.addEventListener('scroll', function (event) {
-    const navBar = document.getElementById("navegacion");
+window.addEventListener('scroll', function () {
+    const navBar = document.getElementById("myTopnav");
 
     if (window.scrollY > 10){
         navBar.classList.add('solid');
