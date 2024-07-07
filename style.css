@@ -1,11 +1,17 @@
+/*  --------------------- GENERAL --------------------- */
 * {
     margin: 0;
 }
 
 body {
   background-color: #f2f2f2;
-  color: #2f2f2f;
 }
+
+
+h2{
+    text-align: center;
+}
+
 li{
     list-style: none;
 }
@@ -15,18 +21,21 @@ header {
     margin: 0;
 }
 
+/*  --------------------- EN VARIAS PAGINAS --------------------- */
+
+
+/*NAVBAR */
 #main_reserva{
     padding-top: 10vh;
     height: 100vh;
     background: url("/imagenes/reserva.jpg") center ;
 }
 
-
-/*---------------------------------------- NAVBAR  */
 #navegacion {
     overflow: hidden;
-    background-color: #ffffff80;
-    border: 1px solid #f7f7f780;
+    color: #f2f2f2;
+    background-color: #514eff70;
+    border: 1px solid #514eff5d;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -36,9 +45,9 @@ header {
 
 #navegacion.solid {
   /* clear: both; */
-  background: #f2f2f2; /* Solid color */
-  border: 1px solid #f2f2f2;
-  color: #2f2f2f;
+  background: #514eff; /* Solid color */
+  border: 1px solid #514eff;
+  color: #f2f2f2;
 }
 
 .sticky {
@@ -47,16 +56,10 @@ header {
   width: 100vw;
 }
 
-#logo{
-    margin-top: 1%;
-    margin-left: 2.5%;
-    width: 30%;
-}
-
 
 .item {
     display: block;
-    color: #2f2f2f;
+    color: #f2f2f2;
     background: #514eff2c;
     border-radius: 4px;
     text-align: center;
@@ -66,11 +69,11 @@ header {
 }
 
 .topnav .item:hover {
-    background: #514eff69;
+    background: #514eff;
     backdrop-filter: blur(10px);
     
     -webkit-backdrop-filter: blur(10px);
-    color: #f2f2f2;
+
 }
 
 .display {
@@ -114,13 +117,49 @@ header {
 .line {
     width: 25px;
     height: 3px;
-    background-color: #2f2f2f;
+    background-color: #f2f2f2;
 }
 
 .menu-rotate {
     transform: rotate(90deg);
     transition: 1s;
 }
+
+/* FOOTER */
+footer{
+    background: #514eff; 
+    border: 1px solid #514eff;
+    margin-top: 10%;
+}
+
+
+#logo_footer{
+    margin-top: 1%;
+    margin-left: 2.5%;
+    width: 100%;
+}
+
+.logo_info{
+    width: 35%;
+
+}
+
+
+
+.mapa{
+    width: 150px;
+    height: 100px;
+    margin:10px ;
+    text-align: center;
+    background-image: url("/imagenes/test.jpg");
+    background-size: contain;
+    background-position: center;
+
+}
+
+
+
+/* HERO */
 .hero {
     background-position: left;
     background-repeat: no-repeat;
@@ -137,32 +176,52 @@ header {
 #hero_contacto {
     background-image: url("imagenes/contacto.jpg");
 }
-h2{
-    text-align: center;
-}
-#inicioServicio{
-    display:none;
-}
 
-#servicios{
+/* ESTA EN GENERAL YA QUE ES USADO */
+.bloqueSeccion{
     width:90vw;
     margin: auto;
     background-color:#514eff;
     padding: 10px;
 }
+#inicioServicio {
+    display: none;
+}
+
+
+/*  --------------------- INDEX  --------------------- */
+
+
 .iconoServicio{
     width: 10%;
     margin-right:5px;
 }
 
-#servicios{
-    text-align:center;
-}
 
+
+
+
+/*  ---------------------PAGINA NOSOTROS--------------------- */
 #contenedorNosotros{
-    text-align:center;
+    margin: 4vh auto;
+    /* text-align:center;   NO PORQUE PARECE CANCION */
+}
+#contenedorNosotros p{
+    padding: 10px;
+    text-align: justify;
 }
 
+#img_nosotros{
+    display: none;
+}
+
+.nosotros_img img{
+    width: 100%;
+}
+
+
+
+/* Adaptacion para  DESKTOP*/
 @media (min-width: 375px) {
     .hamburger-menu {
         width: 8%;
