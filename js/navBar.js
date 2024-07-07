@@ -43,3 +43,10 @@ window.addEventListener('scroll', function () {
     }
 })
 
+
+// Evento para el menu hamburguesa
+const menuHamburguesa = document.getElementById('menu');
+
+menuHamburguesa.addEventListener('click', function() {
+    menu();
+})
