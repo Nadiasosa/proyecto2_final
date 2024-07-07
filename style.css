@@ -5,7 +5,6 @@
 
 body {
   background-color: #f2f2f2;
-  color: #2f2f2f;
 }
 
 
@@ -34,8 +33,9 @@ header {
 
 #navegacion {
     overflow: hidden;
-    background-color: #ffffff80;
-    border: 1px solid #f7f7f780;
+    color: #f2f2f2;
+    background-color: #514eff70;
+    border: 1px solid #514eff5d;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,9 +45,9 @@ header {
 
 #navegacion.solid {
   /* clear: both; */
-  background: #f2f2f2; /* Solid color */
-  border: 1px solid #f2f2f2;
-  color: #2f2f2f;
+  background: #514eff; /* Solid color */
+  border: 1px solid #514eff;
+  color: #f2f2f2;
 }
 
 .sticky {
@@ -59,7 +59,7 @@ header {
 
 .item {
     display: block;
-    color: #2f2f2f;
+    color: #f2f2f2;
     background: #514eff2c;
     border-radius: 4px;
     text-align: center;
@@ -69,11 +69,11 @@ header {
 }
 
 .topnav .item:hover {
-    background: #514eff69;
+    background: #514eff;
     backdrop-filter: blur(10px);
     
     -webkit-backdrop-filter: blur(10px);
-    color: #f2f2f2;
+
 }
 
 .display {
@@ -117,7 +117,7 @@ header {
 .line {
     width: 25px;
     height: 3px;
-    background-color: #2f2f2f;
+    background-color: #f2f2f2;
 }
 
 .menu-rotate {
@@ -127,24 +127,32 @@ header {
 
 /* FOOTER */
 footer{
-    display: flex;
+    background: #514eff; 
+    border: 1px solid #514eff;
+    margin-top: 10%;
 }
 
 
 #logo_footer{
     margin-top: 1%;
     margin-left: 2.5%;
-    width: 30%;
+    width: 100%;
+}
+
+.logo_info{
+    width: 35%;
+
 }
 
 
 
 .mapa{
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
+    margin:10px ;
     text-align: center;
     background-image: url("/imagenes/test.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 
 }
