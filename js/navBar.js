@@ -43,10 +43,26 @@ window.addEventListener('scroll', function () {
     }
 })
 
-
-// Evento para el menu hamburguesa
-const menuHamburguesa = document.getElementById('menu');
-
-menuHamburguesa.addEventListener('click', function() {
+const navBar = document.getElementById("menu").addEventListener("click", function () {
     menu();
 })
+
+// // Evento para el menu hamburguesa
+// document.getElementById("menu1").addEventListener("click", function () {
+//     menu()
+// })
+
+// // Evento para el menu hamburguesa
+// document.getElementById("menu2").addEventListener("click", function () {
+//     menu()
+// })
+
+// // Evento para el menu hamburguesa
+// document.getElementById("menu3").addEventListener("click", function () {
+//     menu()
+// })
+
+// // Evento para el menu hamburguesa
+// document.getElementById("menu4").addEventListener("click", function () {
+//     menu()
+// })
