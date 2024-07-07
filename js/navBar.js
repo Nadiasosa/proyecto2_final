@@ -36,7 +36,7 @@ function anchors(){
 window.addEventListener('scroll', function () {
     const navBar = document.getElementById("myTopnav");
 
-    if (window.scrollY > 10){
+    if (window.scrollY > 0){
         navBar.classList.add('solid');
     } else {
         navBar.classList.remove('solid');
