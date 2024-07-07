@@ -1,10 +1,12 @@
 /*  --------------------- GENERAL --------------------- */
 * {
     margin: 0;
+
 }
 
 body {
   background-color: #f2f2f2;
+  overflow-x: hidden;
 }
 
 
@@ -63,7 +65,7 @@ header {
     background: #514eff2c;
     border-radius: 4px;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -128,20 +130,33 @@ header {
 /* FOOTER */
 footer{
     background: #514eff; 
-    border: 1px solid #514eff;
     margin-top: 10%;
+    padding-top: 15px;
+}
+#logo_content{
+    width: 100px;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #f2f2f283;
 }
 
-
 #logo_footer{
-    margin-top: 1%;
-    margin-left: 2.5%;
     width: 100%;
 }
 
-.logo_info{
-    width: 35%;
 
+.logo_info{
+    margin: auto;
+    width: 90%;
+
+}
+
+#info_contacto{
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f2f2f283;
 }
 
 
@@ -149,15 +164,17 @@ footer{
 .mapa{
     width: 150px;
     height: 100px;
-    margin:10px ;
-    text-align: center;
+    margin: 15px 10px ;
+    margin: auto;
     background-image: url("/imagenes/test.jpg");
     background-size: contain;
     background-position: center;
 
 }
 
-
+#rights{
+    text-align: center;
+}
 
 /* HERO */
 .hero {
