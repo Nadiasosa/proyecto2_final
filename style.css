@@ -438,6 +438,13 @@ button:hover{
 }
 
 
+/*  --------------- RESERVA ------------------ */
+#contenido_reserva{
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+} 
+
 
 /* Adaptacion para  DESKTOP*/
 @media (min-width: 375px) {

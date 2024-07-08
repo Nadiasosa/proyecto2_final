@@ -41,32 +41,31 @@
     </header>
     
     <main id="main_reserva">
-       <form id="reserva">
-        <label for="fecha_de_entrada">Fecha de entrada</label>
-        <input type="datetime-local" id="fecha_de_entrada">
-        <select id="tiempo">
-            <option>Seleccione tiempo</option>
-            <option value="30min">30 minutos</option>
-            <option value="2hs">2 horas</option>
-            <option value="1dia">1 dia</option>
-            <option value="otro">Otro</option>
-
-        </select>
-        <select id="vehiculo">
-            <option>Vehiculo</option>
-            <option value="auto">Automovil</option>
-            <option value="moto">Motocicleta/Quad</option>
-            
-            
-
-
-        </select>
-        <input type="submit" value="Enviar" name="" id="">
-        <input type="reset" value="Cancelar" name="" id="">
-       </form>
-     
+         <div id="contenido_reserva">
+            <h1 style="color: #f2f2f2; text-align: center;">RESERVAR</h1>
+            <div class="formulario">
+                <form id="reserva">
+                    <label for="fecha_de_entrada">Fecha de entrada</label>
+                    <input type="datetime-local" id="fecha_de_entrada">
+                    <select id="tiempo">
+                        <option>Seleccione tiempo</option>
+                        <option value="30min">30 minutos</option>
+                        <option value="2hs">2 horas</option>
+                        <option value="1dia">1 dia</option>
+                        <option value="otro">Otro</option>   
+                    </select>
+                    <select id="vehiculo">
+                        <option>Vehiculo</option>
+                        <option value="auto">Automovil</option>
+                        <option value="moto">Motocicleta/Quad</option>
+                    </select>
+                    <input type="submit" value="Enviar" name="" id="">
+                    <input type="reset" value="Cancelar" name="" id="">
+                </form>
+            </div>
+         </div>     
     </main>
-    <footer>
+    <footer style="margin-top: 0;">
         <div class="logo_info">
             <img id="logo_footer" src="/imagenes/logo.png">
             <div id="info_contacto">
