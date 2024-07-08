@@ -32,6 +32,17 @@
 
     <body>
         <div id="container">
+            <div id="contLoader">
+                <div id="page">
+                    <div id="cont">
+                        <div id="ring"></div>
+                        <div id="ring"></div>
+                        <div id="ring"></div>
+                        <div id="ring"></div>
+                        <div id="h3">Cargando</div>
+                    </div>
+                </div>
+                </div>
             <header class="sticky" id="navegacion">
                 <nav class="topnav" id="myTopnav">
                     <div id="logo_Menu">
@@ -71,6 +82,7 @@
                         >
                     </div>
                     <div class="display" id="config-items">
+                        <h4 class="separacion">Tamaño de Letra:</h4>
                         <input type="radio" name="tamaño" id="default" checked>
                         <label for="default">Por Defecto</label>
                 
@@ -80,9 +92,10 @@
                         <input type="radio" name="tamaño" id="tam-mediano">
                         <label for="tam-mediano">Mediano</label>
                 
-                        <input type="radio" name="tamaño" id="tam-grande">
-                        <label for="tam-grande">Grande</label>
-                        <br>
+                        <input class="pc" type="radio" name="tamaño" id="tam-grande">
+                        <label class="pc" for="tam-grande">Grande</label>
+
+                        <h4 class="separacion" id="h4NavBar">Tema de Pagina:</h4>
                         <input type="radio" name="tema" id="navegador" checked>
                         <label for="navegador">Navegador</label>
                         <input type="radio" name="tema" id="claro">

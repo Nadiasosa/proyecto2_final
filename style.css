@@ -103,6 +103,19 @@ header {
     margin: auto;
 }
 
+#config-items{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#h4NavBar{
+    margin-top: 15px;
+}
+
+.separacion{
+    margin-bottom: 5px;
+}
+
 .giracion img{
     transform: rotate(360deg);
     transition: 2s;
@@ -349,24 +362,175 @@ iframe{
     width: 100%;
 }
 
+/* Lo de arriba es el css "completo" del sitio */
+
+/* Lo de abajo es el css del testeo1.css */
+
+.default{
+  font-size: 16px;
+}
+
+.texto-chico {
+  font-size: 14px;
+}
+
+.texto-mediano {
+  font-size: 18px;
+}
+
+.texto-grande {
+  font-size: 24px;
+}
+
+.pc{
+  display: none;
+}
+
+.oscuro {
+  background-color: #1B1919;
+  /* background-color: #0B0A29; */
+  color: white;
+}
+
+.claro {
+  background-color: white;
+  color: black;
+}
+
+.ocultar{
+  display: none !important;
+}
+
+.mostrarTexto{
+display: block;
+}
+
+.ocultarTexto{
+display: none;
+}
+
+
+#contLoader{
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: #f2f2f2;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#ring {
+  width: 190px;
+  height: 190px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255,65,106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(0,255,255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-scheme {
+    background-color: #1B1919;
+    color: white;
+}
+}
+
+
 
 
 /* Adaptacion para  DESKTOP*/
 @media (min-width: 375px) {
     .hamburger-menu {
         width: 8%;
-        margin-top: 6%;
+        margin-top: 4.7%;
         margin-right: 6%;
     }
 }
 
 @media (min-width: 425px) {
     .hamburger-menu {
-        margin-top: 5%;
+        margin-top: 4.5%;
         margin-right: 2.5%
     }
     .topnav{
       padding: 0 10px;
+    }
+
+    #config{
+      margin-right: 200px;
     }
 }
 @media (min-width: 768px) {
@@ -398,4 +562,8 @@ iframe{
         padding: 5px 10px;
     }
 }
+
+
+
+
 
