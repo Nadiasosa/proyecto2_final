@@ -1,8 +1,11 @@
 function menu(){
     // Funcion al dar click al boton
-    girar();
-    myLinks();
-    anchors();
+    var g = document.getElementById("config-items");
+    if(g.className === "displayO"){
+        girar();
+        myLinks();
+        anchors();
+    }
 }
 
 function girar(){
@@ -25,10 +28,18 @@ function myLinks() {
 
 function anchors(){
     var f = document.getElementById("myLinksAnchor");
-    if (f.className === "display") {
-        f.className += " myLinks";
-    } else {
-        f.className = "display";
+        if (f.className === "displayA") {
+            f.className += " myLinks";
+        } else {
+            f.className = "displayA";
+        }
+}
+
+function desplegarconfig(){
+    var g = document.getElementById("myLinksAnchor");
+    if(g.className === "displayA"){        
+        girar1();
+        desplegar();
     }
 }
 
@@ -48,10 +59,10 @@ function girar1(){
 function desplegar(){
     let configitems = document.getElementById("config-items");
 
-    if(configitems.className === "display"){
+    if(configitems.className === "displayO"){
         configitems.className = "myLinks";
     } else {
-        configitems.className = "display";
+        configitems.className = "displayO";
     }
 }
 
@@ -71,15 +82,13 @@ const navBar = document.getElementById("menu").addEventListener("click", functio
 })
 
 document.getElementById("config").addEventListener("click", function (){
-    girar1();
-    desplegar();
+    desplegarconfig();
 })
 
 // Apartado de interacciones DOM (Pantalla de carga, cambiar tamaño de letra y tema de la pagina).
 
 var loader = document.getElementById("contLoader");
 function loading(){
-    console.log("función loading funciona bien.");
     setTimeout(timer, 0);
 }
 
