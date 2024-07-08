@@ -510,6 +510,101 @@ display: none;
 
 
 
+/* ----------------- Contacto ---------------------- */
+.content{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 60vh; 
+}
+
+form{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #292929;
+    color: #f2f2f2;
+    box-shadow: 0 1px 20px  #0009;
+}
+
+label{
+    text-shadow: 1px 1px 0.8px  #838383;
+}
+
+input,textarea{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+input,textarea{
+    border: 0px;
+    background-color: #2f2f2f;
+    color: #ddd;
+    border-bottom: 2px solid #8b8b8b;
+    transition: border-bottom 1s, background-color 1s;
+}
+
+input:hover,textarea:hover{
+    background-color: #7c7c7c;
+}
+
+input:focus-visible,textarea:focus-visible{
+    outline-width: 1px;
+    color: #2f2f2f;
+    background-color: #ddd;
+    border-bottom: 2px solid #363636;
+    outline-style: none;
+}
+input{
+    height: 20px;
+}
+textarea{
+    height: 90px;
+    resize: none;
+}
+.enviar_boton{
+    text-align: center;
+}
+button{
+    margin: 15px;
+    font-weight: bold;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #363636;
+    color: #ddd;
+    border: 0px;
+    transition: color 1s, background-color 1s;
+}
+
+button:hover{
+    color: #363636;
+    background-color: #ddd;
+}
+
+/* Mensajes */
+
+.alert_bad{
+    margin-left: 5px;
+    color: rgb(255, 0, 0);
+    font-weight: lighter;
+}
+
+.alert_good{
+    display: block;
+    color: rgb(32, 255, 32);
+    font-weight: lighter;
+}
+
+
+/*  --------------- RESERVA ------------------ */
+#contenido_reserva{
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+} 
+
 
 /* Adaptacion para  DESKTOP*/
 @media (min-width: 375px) {
