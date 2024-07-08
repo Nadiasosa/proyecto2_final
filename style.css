@@ -99,6 +99,24 @@ header {
     height: auto;
 }
 
+#config {
+    margin: auto;
+}
+
+.giracion img{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.giracion1 img{
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+
+#config img{
+    width: 20px;
+}
+
 #contHamb {
     width: 70%;
     height: 40px;
@@ -111,8 +129,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 6%;
+    margin-top: 5.7%;
     margin-right: 7%;
+    margin-left: -45%;
     transform: rotate(0deg);
     transition: 1s;
     float: right;

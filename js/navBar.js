@@ -32,6 +32,29 @@ function anchors(){
     }
 }
 
+function girar1(){
+    let config = document.getElementById("config");
+
+    if(config.className !== "giracion"){
+        config.classList.remove("giracion","giracion1");
+        config.classList.add("giracion");
+    } else {
+        config.classList.remove("giracion","giracion1");
+        config.classList.add("giracion1")
+    }
+
+}
+
+function desplegar(){
+    let configitems = document.getElementById("config-items");
+
+    if(configitems.className === "display"){
+        configitems.className = "myLinks";
+    } else {
+        configitems.className = "display";
+    }
+}
+
 // evento para cambiar el estado de la barra
 window.addEventListener('scroll', function () {
     const navBar = document.getElementById("myTopnav");
@@ -47,22 +70,7 @@ const navBar = document.getElementById("menu").addEventListener("click", functio
     menu();
 })
 
-// // Evento para el menu hamburguesa
-// document.getElementById("menu1").addEventListener("click", function () {
-//     menu()
-// })
-
-// // Evento para el menu hamburguesa
-// document.getElementById("menu2").addEventListener("click", function () {
-//     menu()
-// })
-
-// // Evento para el menu hamburguesa
-// document.getElementById("menu3").addEventListener("click", function () {
-//     menu()
-// })
-
-// // Evento para el menu hamburguesa
-// document.getElementById("menu4").addEventListener("click", function () {
-//     menu()
-// })
+document.getElementById("config").addEventListener("click", function (){
+    girar1();
+    desplegar();
+})
