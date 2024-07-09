@@ -192,11 +192,14 @@ footer{
     height: auto;
     margin-bottom: 25px;
     border-radius: 10px;
-    background-color: #f2f2f283;
+    /* background-color: #f2f2f283; */
 }
 
 #logo_footer{
     width: 100%;
+    background-color: #f2f2f283;
+    margin-left: 5px;
+    border-radius: 10px;
 }
 
 
@@ -215,7 +218,7 @@ footer{
 /* MAPA */
 iframe{
     width: 100%;
-    height: 150px;
+    height: 100px;
 }
 
 
@@ -254,7 +257,7 @@ iframe{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4e5aff;
+  background-color: #2f2f2f;
   color: #3b82f6;
   border: none;
   border-radius: 8px;
@@ -310,7 +313,7 @@ iframe{
 }
 
 /* ---------- ICONOS DE REDES ------------- */
-.card {
+.iconos {
     width: 45%;
     margin: auto;
     height: 20px;
@@ -389,9 +392,77 @@ iframe{
     margin-right:5px;
 }
 
-/* Slider  Reseñas*/
+#reseñas {
+  width: 100%;
+  margin: 50px auto;
+  position: relative;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
 
 
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-card-img{
+  width: 100px;
+}
+
+.slider-card {
+  /* min-width: 50%; */
+  height: 50%;
+  width: 45%;
+  box-sizing: border-box;
+  padding: 20px;
+  /* text-align: center; */
+  background: #2f2f2f;
+  color: #f2f2f2;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.review {
+  font-size: 10px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.author {
+  font-size: 1em;
+  text-align: center;
+  color: #d6d6d6;
+}
+
+.btnSlider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  width: 25px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
 
 /*  ---------------------PAGINA NOSOTROS--------------------- */
 #contenedorNosotros{
@@ -648,13 +719,12 @@ button:hover{
 } 
 
 
-/* Adaptacion para  DESKTOP*/
 @media (min-width: 375px) {
-    .hamburger-menu {
+  .hamburger-menu {
         width: 8%;
         margin-top: 4.7%;
         margin-right: 6%;
-    }
+      }
     
     /* Distintos heros */
     #hero_inicio {
@@ -677,14 +747,14 @@ button:hover{
     .topnav{
       padding: 0 10px;
     }
-
+    
     #config{
       margin-right: 200px;
     }
 }
 @media (min-width: 768px) {
     .hamburger-menu {
-        display: none;
+      display: none;
     }
     .displayA {
         display: block;
@@ -703,8 +773,8 @@ button:hover{
     .myLinksAnchors {
         width: 70%;
         justify-content: space-between;
-    }
-    .topnav {
+      }
+      .topnav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -714,6 +784,98 @@ button:hover{
         text-align: center;
         padding: 5px 10px;
     }
+
+    .iconoServicio{
+      width: 25px;
+    }
+    #servicio_imagen{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #inicioServicio{
+      display: block;
+      width: 280px;
+      border-radius: 15px 25px;
+    }
+    
+    .slider-card-img{
+      width: 150px;
+    }
+    .review{
+      font-size: 20px;
+      text-align: left;
+      padding: 8px 8px;
+    }
+
+    .footer{
+      display: flex;
+    }
+    .logo_info{
+      display: flex;
+      margin: 0px auto;
+    }
+
+   
+    #info_contacto{
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      height: 80px;
+    }
+    #logo_footer{
+      width: 100px;
+      margin-top: 10px;
+    }
+    .mapa_iconos{
+      padding: 10px 0;
+    }
+    .info{
+      width: 50%;
+      margin: auto;
+    }
+
+}
+
+/* Adaptacion para  DESKTOP*/
+@media (min-width: 1024px){
+  .slider-card-img{
+    width: 200px;
+  }
+  .review{
+    padding: 8px 10px;
+  }
+  .slider-card{
+    min-height: 400px;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+  }
+  .item_servicio>span{
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 60px;
+  }
+  #btn_reserva{
+    width: 350px;
+    height: 50px;
+    
+  }
+  
+  #btn_reserva a{
+    font-size: 25px;
+  }
+}
+
+@media (min-width:1440px){
+  .links{
+    font-size: 18px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
