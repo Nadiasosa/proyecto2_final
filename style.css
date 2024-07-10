@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
     width: 100vh;
     margin: 0;
@@ -204,8 +205,9 @@ footer{
 
 
 .logo_info{
+    width: 100%;
     margin: auto;
-    width: 90%;
+    padding: 12px 0;
 
 }
 
@@ -297,11 +299,13 @@ iframe{
 /* ESTA EN GENERAL YA QUE ES USADO */
 .bloqueSeccion{
     width:auto;
+    width: 90vw;
     margin: auto;
     background-color:#514eff;
-    color: #d1d1d1;
+    color: #f2f2f2;
     padding: 10px;
 }
+
 
 #inicioServicio {
     display: none;
@@ -470,9 +474,52 @@ iframe{
 
 /*  ---------------------PAGINA NOSOTROS--------------------- */
 #contenedorNosotros{
+    width: 90%;
     margin: 4vh auto;
-    /* text-align:center;   NO PORQUE PARECE CANCION */
+    padding: 5px;
 }
+.bloqueNosotros p{
+  padding: 8px 10px;
+}
+
+.service_card{
+  width: 100%;
+  height: 300px;
+  margin: 8px auto;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden; /* Oculta el contenido que se desborde */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  padding: 20px;
+  transition: height 0.3s; /* Transición suave de altura */
+  height: 7%; /* Altura inicial que muestra solo la primera línea */
+}
+.overlay:hover{
+  height: 40%;
+}
+
+.overlay_text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+#servicio_electric_Charge{
+  background-image: url("imagenes/electric-charge_288x192.webp");
+}
+#servicio_car_wash{
+  background-image: url("imagenes/CarWash_288x192.webp");
+}
+#servicio_coffee_shop{
+  background-image: url("imagenes/coffeeShop_288x192.webp");
+}
+
 #contenedorNosotros p{
     padding: 10px;
     text-align: justify;
@@ -482,9 +529,6 @@ iframe{
     display: none;
 }
 
-.nosotros_img img{
-    width: 100%;
-}
 
 /* Lo de arriba es el css "completo" del sitio */
 
@@ -730,20 +774,34 @@ button:hover{
         margin-right: 6%;
       }
     
-    /* Distintos heros */
+    /* Distintos heros  MOBILE*/
     #hero_inicio {
       background-image: url("imagenes/Hero_index_Tablet.jpg");
     }
     #hero_nosotros {
-      background-image: url("imagenes/nosotros.jpg");
+      background-image: url("imagenes/Hero_nosotros_Tablet.jpg");
     }
     #hero_contacto {
       background-image: url("imagenes/contacto.jpg");
+    }
+
+    /* Distintas cartas de  Servicios (Pagina Nosotros) */
+    #servicio_electric_Charge{
+      background-image: url("imagenes/electric-charge_405x270.webp");
+    }
+    #servicio_car_wash{
+      background-image: url("imagenes/CarWash_405x270.webp");
+    }
+    #servicio_coffee_shop{
+      background-image: url("imagenes/coffeeShop_405x270.webp");
     }
   
 }
 
 @media (min-width: 425px) {
+    h1{
+      font-size: 35px;
+    }
     .hamburger-menu {
         margin-top: 4.5%;
         margin-right: 2.5%
@@ -773,6 +831,10 @@ button:hover{
     }
 }
 @media (min-width: 768px) {
+
+  h1{
+    font-size: 40px;
+  }
     .hamburger-menu {
       display: none;
     }
@@ -789,6 +851,11 @@ button:hover{
     }
     #logo_Menu {
         width: 30%;
+    }
+
+    .bloqueSeccion{
+      width:auto;
+      /* max-width: 90vw; */
     }
     .myLinksAnchors {
         width: 70%;
@@ -837,12 +904,27 @@ button:hover{
       padding: 8px 8px;
     }
 
+
+    /* Pagina nosotros */
+    .nosotros_img{
+      display: flex;
+    }
+    .service_card{
+      width: 350px;
+      margin-left: 10px;
+      height: 250px;
+    }
+
+    .overlay:hover{
+      height: 85%;
+    }
+
     .footer{
       display: flex;
     }
     .logo_info{
       display: flex;
-      margin: 0px auto;
+      padding: 12px 0;
     }
 
    
@@ -871,6 +953,18 @@ button:hover{
 
 /* Adaptacion para  DESKTOP*/
 @media (min-width: 1024px){
+
+  /* Distintos heros MINI-LAPTOP*/
+  #hero_inicio {
+    background-image: url("imagenes/Hero_index_laptop.jpg");
+  }
+  #hero_nosotros {
+    background-image: url("imagenes/Hero_nosotros_laptop.jpg");
+  }
+  #hero_contacto {
+    background-image: url("imagenes/contacto.jpg");
+  }
+
   .slider-card-img{
     width: 200px;
   }
@@ -889,10 +983,10 @@ button:hover{
     font-weight: bold;
   }
   h1{
-    font-size: 60px;
+    font-size: 50px;
   }
   #btn_reserva{
-    width: 350px;
+    width: 300px;
     height: 50px;
     
   }
@@ -900,6 +994,24 @@ button:hover{
   #btn_reserva a{
     font-size: 25px;
   }
+
+      /* Pagina nosotros */
+      .bloqueNosotros{
+        max-width: 95vw;
+        width: 90vw;
+      }
+      .nosotros_img{
+        display: flex;
+      }
+      .service_card{
+        width: 350px;
+        margin-left: 10px;
+        height: 250px;
+      }
+  
+      .overlay:hover{
+        height: 85%;
+      }
 }
 
 @media (min-width:1440px){
