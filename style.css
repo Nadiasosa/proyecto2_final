@@ -716,7 +716,7 @@ input:focus-visible,textarea:focus-visible{
     border-bottom: 2px solid #363636;
     outline-style: none;
 }
-input{
+input[type="radio"]{
     height: 15px;
     width: 15px;
 }
@@ -757,7 +757,14 @@ button:hover{
     color: rgb(32, 255, 32);
     font-weight: lighter;
 }
-
+#hero_contacto{
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+#footer_2{
+  margin: 0px;
+}
 
 /*  --------------- RESERVA ------------------ */
 #contenido_reserva{
@@ -908,6 +915,8 @@ button:hover{
     /* Pagina nosotros */
     .nosotros_img{
       display: flex;
+      /* margin: 20px 0; */
+      justify-content: space-evenly;
     }
     .service_card{
       width: 350px;
@@ -918,9 +927,26 @@ button:hover{
     .overlay:hover{
       height: 85%;
     }
+    #hero_contacto{
+      margin: 0;
+      height: 100vh;
+    }
+
+    /* CONTACTO TABLE */
+    #form_contact{
+      max-width: 700px;
+      height: 320px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 0.8px #0009;
+    }
+
+
 
     .footer{
       display: flex;
+    }
+    #footer_2{
+      margin: 0px;
     }
     .logo_info{
       display: flex;
@@ -996,7 +1022,7 @@ button:hover{
   }
 
       /* Pagina nosotros */
-      .bloqueNosotros{
+    .bloqueNosotros{
         max-width: 95vw;
         width: 90vw;
       }
@@ -1004,9 +1030,10 @@ button:hover{
         display: flex;
       }
       .service_card{
-        width: 350px;
+        width: 300px;
         margin-left: 10px;
         height: 250px;
+        margin: auto;
       }
   
       .overlay:hover{
@@ -1024,6 +1051,30 @@ button:hover{
     width: 20%;
     height: 500px;
     text-align: center;
+    
+  }
+  /* Pagina nosotros */
+  .nosotros_img{
+        display: flex;
+        margin: 20px 0;
+        justify-content: space-evenly;
+      }
+  #form_contact{
+    width: 50%;
+    font-size: 15px;
+  }
+
+  #form_contact input, textarea{
+    font-size: 1.2em;
+    padding: 2px 5px 0 5px;
+  }
+  #form_contact input{
+    height: 25px;
+  }
+
+
+  #form_contact button{
+    height: 35px;
   }
 }
 

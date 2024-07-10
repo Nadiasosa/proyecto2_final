@@ -2,105 +2,137 @@
 <html lang="es">
     <head>
         <!-- -----------MetaTags----------- -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="SmartPark">
-        <meta name="description" content="En SmartPark podras encontrar un sitio donde guardar tu auto ademas de tener servicios adicionaes.">
-        <meta name="keywords" content="estacionamiento,tienda,auto electricos">
-        <meta name="author" content="Lightning Innovation">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="SmartPark" />
+        <meta name="description" content="En SmartPark podras encontrar un sitio donde guardar tu auto ademas de tener servicios adicionaes."/>
+        <meta
+            name="keywords"
+            content="estacionamiento,tienda,auto electricos"
+        />
+        <meta name="author" content="Lightning Innovation" />
         <!-- -----------CSS----------- -->
-        <link rel="stylesheet" href="..\style.css">
+        <link rel="stylesheet" href="..\style.css" />
         <!-- -----------Scripts----------- -->
         <script src="..\js\navBar.js" defer></script>
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+        <script
+            type="text/javascript"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            defer
+        ></script>
         <script src="..\js\traductor.js" defer></script>
-        <script src="..\js\validator.js"></script>
+        <script src="..\js\validator.js" defer></script>
         <!-- ----------------------------- -->
-        <link rel="stylesheet" href="..\ajuste.css">
+        <link rel="stylesheet" href="..\ajuste.css" />
         <!-- ----------------------------- -->
         <title>SmartPark: Contacto</title>
     </head>
-<body>
-    <div id="contLoader">
-        <div id="page">
-            <div id="cont">
-                <div id="ring"></div>
-                <div id="ring"></div>
-                <div id="ring"></div>
-                <div id="ring"></div>
-                <div id="h3">Cargando</div>
+    <body>
+        <div id="contLoader">
+            <div id="page">
+                <div id="cont">
+                    <div id="ring"></div>
+                    <div id="ring"></div>
+                    <div id="ring"></div>
+                    <div id="ring"></div>
+                    <div id="h3">Cargando</div>
+                </div>
             </div>
         </div>
-        </div>
-        <header class="sticky "  id="navegacion" >
+        <header class="sticky" id="navegacion">
             <nav class="topnav" id="myTopnav">
-              <div id="logo_Menu">
-                <a href="/index.html" id="logo"><img src="..\imagenes\logo.png"></a>
-                <div id="config">
-                    <img src="..\imagenes\settings.png">
+                <div id="logo_Menu">
+                    <a href="/index.html" id="logo"
+                        ><img src="..\imagenes\logo.png"
+                    /></a>
+                    <div id="config">
+                        <img src="..\imagenes\settings.png" />
+                    </div>
+                    <div id="menu" class="hamburger-menu">
+                        <div id="linea1" class="line"></div>
+                        <div id="linea2" class="line"></div>
+                        <div id="linea3" class="line"></div>
+                    </div>
                 </div>
-                <div id="menu" class="hamburger-menu">
-                    <div id="linea1" class="line"></div>
-                    <div id="linea2" class="line"></div>
-                    <div id="linea3" class="line"></div>
+                <div class="displayA" id="myLinksAnchor">
+                    <a class="links item" id="aInicio" href="../index.html"
+                        >Inicio</a
+                    >
+                    <a
+                        class="links item"
+                        id="aReserva"
+                        href="../html/reserva.html"
+                        >Reserva</a
+                    >
+                    <a
+                        class="links item"
+                        id="aNosotros"
+                        href="../html/nosotros.html"
+                        >Nosotros</a
+                    >
+                    <a
+                        class="links item"
+                        id="aContacto"
+                        href="../html/contacto.html"
+                        >Contacto</a
+                    >
                 </div>
-            </div>
-            <div class="displayA" id="myLinksAnchor">
-                <a class="links item" id="aInicio" href="../index.html">Inicio</a>
-                <a class="links item" id="aReserva" href="../html/reserva.html">Reserva</a>
-                <a class="links item" id="aNosotros" href="../html/nosotros.html">Nosotros</a>
-                <a class="links item" id="aContacto" href="../html/contacto.html">Contacto</a>
-            </div>
-            <div class="displayO" id="config-items">
-                <h4 class="separacion">Tamaño de Letra:</h4>
-                <input type="radio" name="tamaño" id="default" checked>
-                <label for="default">Por Defecto</label>
-        
-                <input type="radio" name="tamaño" id="tam-chico">
-                <label for="tam-chico">Chico</label>
-        
-                <input type="radio" name="tamaño" id="tam-mediano">
-                <label for="tam-mediano">Mediano</label>
-        
-                <input class="pc" type="radio" name="tamaño" id="tam-grande">
-                <label class="pc" for="tam-grande">Grande</label>
+                <div class="displayO" id="config-items">
+                    <h4 class="separacion">Tamaño de Letra:</h4>
+                    <input type="radio" name="tamaño" id="default" checked />
+                    <label for="default">Por Defecto</label>
 
-                <h4 class="separacion" id="h4NavBar">Tema de Pagina:</h4>
-                <input type="radio" name="tema" id="navegador" checked>
-                <label for="navegador">Navegador</label>
-                <input type="radio" name="tema" id="claro">
-                <label for="claro">Claro</label>
-                <input type="radio" name="tema" id="oscuro">
-                <label for="oscuro">Oscuro</label>
-            </div>
+                    <input type="radio" name="tamaño" id="tam-chico" />
+                    <label for="tam-chico">Chico</label>
+
+                    <input type="radio" name="tamaño" id="tam-mediano" />
+                    <label for="tam-mediano">Mediano</label>
+
+                    <input
+                        class="pc"
+                        type="radio"
+                        name="tamaño"
+                        id="tam-grande"
+                    />
+                    <label class="pc" for="tam-grande">Grande</label>
+
+                    <h4 class="separacion" id="h4NavBar">Tema de Pagina:</h4>
+                    <input type="radio" name="tema" id="navegador" checked />
+                    <label for="navegador">Navegador</label>
+                    <input type="radio" name="tema" id="claro" />
+                    <label for="claro">Claro</label>
+                    <input type="radio" name="tema" id="oscuro" />
+                    <label for="oscuro">Oscuro</label>
+                </div>
             </nav>
         </header>
-    <div class="hero" id="hero_contacto"></div>
-    <main>
-        <div id="contacto">
-            <div class="content">
-                <form id="form_contact">
-                    <!-- Correo -->
-                    <label for="correo">Correo:</label>
-                    <span class="alert_bad" id="alert_correo" ></span>
-                    <input type="text"  id="correo">
-                    <!-- Asunto -->
-                    <label for="asunto">Asunto:</label>
-                    <span class="alert_bad" id="alert_asunto"></span>
-                    <input type="text" id="asunto">
-                    <!-- Mensaje -->
-                    <label for="asunto">Mensaje:</label>
-                    <span class="alert_bad" id="alert_mensaje"></span>
-                    <textarea id="mensaje"></textarea>
-                    <!-- Enviar -->
-                    <div class="enviar_boton">
-                        <button type="submit">Enviar</button>
-                        <span id="alert_enviado" class="alert_good"> </span>
-                    </div>
-                </form>
+        <div class="hero" id="hero_contacto">
+            <h1>CONTACTO</h1>
+            <div id="contacto">
+                <div class="content">
+                    <form id="form_contact">
+                        <!-- Correo -->
+                        <label for="correo">Correo:</label>
+                        <span class="alert_bad" id="alert_correo"></span>
+                        <input type="text" id="correo" />
+                        <!-- Asunto -->
+                        <label for="asunto">Asunto:</label>
+                        <span class="alert_bad" id="alert_asunto"></span>
+                        <input type="text" id="asunto" />
+                        <!-- Mensaje -->
+                        <label for="asunto">Mensaje:</label>
+                        <span class="alert_bad" id="alert_mensaje"></span>
+                        <textarea id="mensaje"></textarea>
+                        <!-- Enviar -->
+                        <div class="enviar_boton">
+                            <button type="submit">Enviar</button>
+                            <span id="alert_enviado" class="alert_good"> </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-            
-        <footer>
+        <footer id="footer_2">
             <div class="footer">
                 <div class="logo_info">
                     <div id="logo_content">
@@ -174,10 +206,9 @@
                             </a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <p id="rights">Sitio realizado por Lightning Innovation©2024</p>
         </footer>
-</body>
+    </body>
 </html>
