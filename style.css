@@ -185,7 +185,7 @@ li{
 footer{
     background: #514eff; 
     margin-top: 10%;
-    padding: 15px 0;
+    padding: 0 10px;
 }
 #logo_content{
     width: 100px;
@@ -408,24 +408,28 @@ iframe{
 
 .slider-wrapper {
   display: flex;
+  align-items: center;
+  height: 10%;
+  width: fit-content;
   transition: transform 0.5s ease;
 }
 
 .slider-card-img{
   width: 100px;
+  height: 160px;
 }
 
 .slider-card {
-  /* min-width: 50%; */
-  height: 50%;
+  height: 100%;
   width: 45%;
   box-sizing: border-box;
   padding: 20px;
-  /* text-align: center; */
   background: #2f2f2f;
   color: #f2f2f2;
+  box-shadow: 2px 2px 0.8px #0009;
   border-radius: 10px;
   margin: 0 10px;
+  overflow: hidden; /* Asegura que el contenido adicional no se muestre */
 }
 
 .review {
@@ -751,6 +755,22 @@ button:hover{
     #config{
       margin-right: 200px;
     }
+
+    .slider-card {
+      min-height: 300px;
+      width: 250px;
+      height: 350px;
+      text-align: center;
+    }
+
+    .slider-card-img{
+      width: 150px;
+    }
+
+    .review{
+      font-size: 12px;
+      text-align: left;
+    }
 }
 @media (min-width: 768px) {
     .hamburger-menu {
@@ -799,12 +819,21 @@ button:hover{
       border-radius: 15px 25px;
     }
     
+    .slider-card {
+      min-height: 400px;
+      width: 250px;
+      height: 450px;
+      text-align: center;
+    }
+
     .slider-card-img{
       width: 150px;
     }
     .review{
-      font-size: 20px;
+      width: fit-content;
+      height: fit-content;
       text-align: left;
+      font-size: 15px;
       padding: 8px 8px;
     }
 
@@ -822,7 +851,8 @@ button:hover{
       margin: auto;
       flex-direction: column;
       justify-content: space-between;
-      width: 50%;
+      width: 60%;
+      font-size: 14px;
       height: 80px;
     }
     #logo_footer{
@@ -847,10 +877,10 @@ button:hover{
   .review{
     padding: 8px 10px;
   }
-  .slider-card{
+  .slider-card {
     min-height: 400px;
-    width: 50%;
-    height: 60%;
+    width: 90%;
+    height: 500px;
     text-align: center;
   }
   .item_servicio>span{
@@ -875,6 +905,13 @@ button:hover{
 @media (min-width:1440px){
   .links{
     font-size: 18px;
+  }
+
+  .slider-card {
+    min-height: 400px;
+    width: 20%;
+    height: 500px;
+    text-align: center;
   }
 }
 
