@@ -136,7 +136,7 @@ window.addEventListener("load", loading);
 function cambiarTema(tema){
     var body = document.body;
 
-    body.classList.remove('oscuro', 'claro', 'dark-scheme');
+    body.classList.remove('oscuro', 'claro');
 
     body.classList.add(tema);
 }
@@ -150,5 +150,13 @@ document.getElementById('claro').addEventListener('change' , function() {
 });
 
 document.getElementById('navegador').addEventListener('change', function(){
-    cambiarTema('dark-scheme');
+    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (userPrefersDark){
+        cambiarTema('oscuro');
+        alert("Tema Oscuro");
+    } else {
+        cambiarTema('claro');
+        alert("Tema Claro");
+    }
 });
