@@ -12,8 +12,10 @@
 
         <!-- -----------Scripts----------- -->
         <script src="..\js\navBar.js" defer></script>
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
-        <script src="..\js\traductor.js" defer></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"      defer></script>
+        <script src="..\js\traductor.js"    defer></script>
+        <script src="..\js\reserva.js"      defer></script>
+
         <!-- ----------------------------- -->
         <link rel="stylesheet" href="..\ajuste.css">
         <link rel="stylesheet" href="..\style.css">
@@ -77,27 +79,38 @@
         </header>
     
     <main id="main_reserva">
+        
          <div id="contenido_reserva">
             <h1 style="color: #f2f2f2; text-align: center;">RESERVAR</h1>
             <div class="formulario">
                 <form id="reserva">
                     <label for="fecha_de_entrada">Fecha de entrada</label>
                     <input type="datetime-local" id="fecha_de_entrada">
-                    <select id="tiempo">
-                        <option>Seleccione tiempo</option>
-                        <option value="30min">30 minutos</option>
-                        <option value="2hs">2 horas</option>
-                        <option value="1dia">1 dia</option>
-                        <option value="otro">Otro</option>   
-                    </select>
-                    <select id="vehiculo">
-                        <option>Vehiculo</option>
-                        <option value="auto">Automovil</option>
-                        <option value="moto">Motocicleta/Quad</option>
-                    </select>
-                    <input type="submit" value="Enviar" name="" id="">
-                    <input type="reset" value="Cancelar" name="" id="">
+                    <label for="fecha_de_salida" class="salida" >Fecha de Salida</label>
+                    <input type="datetime-local" class="salida"  id="fecha_de_salida">
+                    <div class="selects">
+                        <select id="vehiculo">
+                            <option>Vehiculo</option>
+                            <option value="auto">Automovil</option>
+                            <option value="moto">Motocicleta/Quad</option>
+                        </select>
+                    </div>
+                    <div class="botones_reserva">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Enviar</button>
+                    </div>
                 </form>
+                <div id="overlay_reserva"></div>
+                <div class="floating-message" id="floatingMessage" >
+                    <h3>RESERVA</h3>
+                    <span>ENTRADA:</span><p class="fechas" id="tiempo_entra"></p>
+                    <br>
+                    <span>SALIDA :</span><p class="fechas" id="tiempo_salida"></p>
+                    <div id="btsConfirmacion">
+                        <button id="nextButton">Confirmar</button>
+                        <button id="cancelButton">Cancelar</button>
+                    </div>
+                </div>
             </div>
          </div>     
     </main>
