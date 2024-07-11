@@ -51,14 +51,24 @@ li {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
     transition: background-color 1s, color 1s, border 1s;
 }
+
+#navegacion.solid {
+    /* clear: both; */
+    background: #514eff; /* Solid color */
+    border: 1px solid #514eff;
+    color: #f2f2f2;
+}
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 3;
 }
+
 .item {
     display: block;
     color: #f2f2f2;
@@ -69,28 +79,98 @@ li {
     text-decoration: none;
     font-size: 17px;
 }
+
 .topnav .item:hover {
     background: #514eff;
     backdrop-filter: blur(10px);
+
     -webkit-backdrop-filter: blur(10px);
 }
+
 .displayA {
     display: none;
 }
+
 .displayO {
     display: none;
 }
+
+.myLinks {
+    display: block;
+}
+
 #logo_Menu {
     justify-content: space-between;
     display: flex;
 }
+
 #logo img {
     width: 90px;
     height: auto;
 }
+
 #config {
     margin: auto;
 }
+
+#config-items {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#h4NavBar {
+    margin-top: 15px;
+}
+
+.separacion {
+    margin-bottom: 5px;
+}
+
+.giracion img {
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.giracion1 img {
+    transform: rotate(-360deg);
+    transition: 2s;
+}
+
+#config img {
+    width: 20px;
+}
+
+#contHamb {
+    width: 70%;
+    height: 40px;
+    float: left;
+}
+
+.hamburger-menu {
+    width: 8%;
+    height: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5.7%;
+    margin-right: 7%;
+    margin-left: -45%;
+    transform: rotate(0deg);
+    transition: 1s;
+    float: right;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+}
+
+.menu-rotate {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
 #config-items {
     padding-left: 10px;
     margin-bottom: 10px;
