@@ -291,6 +291,11 @@ iframe {
     background-image: url("imagenes/contacto.jpg");
 }
 
+#hero_reserva{
+    background-image: url("imagenes/reserva.jpg");
+    margin: 0;
+}
+
 /* ESTA EN GENERAL YA QUE ES USADO */
 .bloqueSeccion {
     width: auto;
@@ -795,6 +800,36 @@ button:hover {
 .selects select{
   width: 100px;
 }
+
+
+
+.toast {
+    width: 200px;
+    margin: auto;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    background-color: #248800;
+    color: #e1e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+  .toast-icon svg {
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+  }
+  
+  .toast-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
 
 /* 
 .salida{

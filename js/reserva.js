@@ -1,13 +1,17 @@
 function fechaVisual(fecha) {
-    let horas = fecha.getHours(); //HORA
-    let minutos = fecha.getMinutes(); //MINUTOS
-    let dia = fecha.getDate();  //DIA
+    let horas = fecha.getHours(); // HORA
+    let minutos = fecha.getMinutes(); // MINUTOS
+    let dia = fecha.getDate(); // DIA
     let mes = fecha.getMonth() + 1; // MES
-    let año = fecha.getFullYear().toString().slice(2); //AÑO SOLO LOS DOS ULTIMOS "24"en este caso
+    let año = fecha.getFullYear().toString().slice(2); // AÑO SOLO LOS DOS ULTIMOS "24" en este caso
 
-    let fechaFormateada=`${horas}:${minutos} del ${dia}-${mes}-${año}`;
+    let fechaFormateada = `${cero(horas)}:${cero(minutos)} del ${cero(dia)}-${cero(mes)}-${año}`;
 
-    return fechaFormateada
+    return fechaFormateada;
+}
+
+function cero(tiempo) {
+    return tiempo < 10 ? '0' + tiempo : tiempo;
 }
 
 document.getElementById("reserva").addEventListener('submit', function(event) {
@@ -17,9 +21,17 @@ document.getElementById("reserva").addEventListener('submit', function(event) {
     const entrada = document.getElementById("fecha_de_entrada").value;
     const salida = document.getElementById("fecha_de_salida").value;
 
+        // Verificar si los campos están vacíos
+        if (!entrada || !salida) {
+            alert('Por favor, complete ambos campos de fecha.');
+            return;
+        }
+    
     // Convertir las cadenas de fecha y hora en objetos Date
     const fechaEntrada = new Date(entrada);
     const fechaSalida = new Date(salida);
+
+
 
     // Comparar las fechas
     if (fechaEntrada >= fechaSalida) {
@@ -40,5 +52,19 @@ document.getElementById("reserva").addEventListener('submit', function(event) {
     campo_entrada.innerHTML=IN_time;
     // Pasar fecha y hora salida
     campo_salida.innerHTML=OUT_time;
+    
+    const confirmar = document.getElementById("nextButton");
+    const mensajeConfirmacion = document.getElementById("confirmacion");
+
+    confirmar.addEventListener("click", function (event) {
+        mensaje.style.display = "none";   
+        mensajeConfirmacion.style.display = "flex";        
+        setTimeout(function() {
+            mensajeConfirmacion.style.display = "none";
+        }, 5000); 
+    })
+
 
 });
+
+
