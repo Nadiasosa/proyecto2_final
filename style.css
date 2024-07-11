@@ -37,13 +37,6 @@ li {
     list-style: none;
 }
 
-    /* CONTACTO TABLE */
-    form {
-        max-width: 700px;
-        border-radius: 15px;
-        box-shadow: 2px 2px 0.8px #0009;
-    }
-
 /*  --------------------- EN VARIAS PAGINAS --------------------- */
 
 /*NAVBAR */
@@ -265,7 +258,7 @@ iframe {
 }
 
 .botones_reserva{
-    display: flex;justify-content: center;
+    display: flex;
 }
 .boton_reserva{
     max-width: 230px;
@@ -297,7 +290,6 @@ iframe {
 #hero_contacto {
     background-image: url("imagenes/contacto.jpg");
 }
-
 
 /* ESTA EN GENERAL YA QUE ES USADO */
 .bloqueSeccion {
@@ -1044,7 +1036,12 @@ h3{
         height: 100vh;
     }
 
-
+    /* CONTACTO TABLE */
+    form {
+        max-width: 700px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 0.8px #0009;
+    }
     #form_contact{
       height: 320px;
     }
