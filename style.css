@@ -282,10 +282,10 @@ iframe {
 
 /* Distintos heros */
 #hero_inicio {
-    background-image: url("imagenes/Hero_index_mobil.jpg");
+    background-image: url("imagenes/Hero_index_mobil.webp");
 }
 #hero_nosotros {
-    background-image: url("imagenes/nosotros.jpg");
+    background-image: url("imagenes/Hero_nosotros_mobil.webp");
 }
 #hero_contacto {
     background-image: url("imagenes/contacto.jpg");
@@ -916,10 +916,10 @@ h3{
 
     /* Distintos heros  MOBILE*/
     #hero_inicio {
-        background-image: url("imagenes/Hero_index_Tablet.jpg");
+        background-image: url("imagenes/Hero_index_Tablet_1.webp");
     }
     #hero_nosotros {
-        background-image: url("imagenes/Hero_nosotros_Tablet.jpg");
+        background-image: url("imagenes/Hero_nosotros_Tablet.webp");
     }
     #hero_contacto {
         background-image: url("imagenes/contacto.jpg");
@@ -1118,10 +1118,10 @@ h3{
 @media (min-width: 1024px) {
     /* Distintos heros MINI-LAPTOP*/
     #hero_inicio {
-        background-image: url("imagenes/Hero_index_laptop.jpg");
+        background-image: url("imagenes/Hero_index_laptop.webp");
     }
     #hero_nosotros {
-        background-image: url("imagenes/Hero_nosotros_laptop.jpg");
+        background-image: url("imagenes/Hero_nosotros_laptop.webp");
     }
     #hero_contacto {
         background-image: url("imagenes/contacto.jpg");
