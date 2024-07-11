@@ -29,6 +29,12 @@ p {
 li {
     list-style: none;
 }
+
+/* LOADER */
+.ocultar {
+    display: none !important;
+}
+
 #main_reserva {
     padding-top: 10vh;
     height: 100vh;
