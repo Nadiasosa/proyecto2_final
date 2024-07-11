@@ -1,14 +1,11 @@
-/*  --------------------- GENERAL --------------------- */
 * {
     margin: 0;
 }
-
 body {
     overflow-x: hidden;
     background-color: #f2f2f2;
     color: #2f2f2f;
 }
-
 header {
     width: 100vh;
     margin: 0;
@@ -20,35 +17,26 @@ h1 {
     padding: 5px;
     text-align: center;
 }
-
 h2 {
     text-align: center;
 }
-
 a {
     text-decoration: none;
 }
-
 p {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 li {
     list-style: none;
 }
-
-/*  --------------------- EN VARIAS PAGINAS --------------------- */
-
-/*NAVBAR */
 #main_reserva {
     padding-top: 10vh;
     height: 100vh;
-    background-image: url("imagenes/reserva.jpg");
+    background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/reserva.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #navegacion {
     overflow: hidden;
     color: #f2f2f2;
@@ -57,24 +45,14 @@ li {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
     transition: background-color 1s, color 1s, border 1s;
 }
-
-#navegacion.solid {
-    /* clear: both; */
-    background: #514eff; /* Solid color */
-    border: 1px solid #514eff;
-    color: #f2f2f2;
-}
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 3;
 }
-
 .item {
     display: block;
     color: #f2f2f2;
@@ -85,73 +63,41 @@ li {
     text-decoration: none;
     font-size: 17px;
 }
-
 .topnav .item:hover {
     background: #514eff;
     backdrop-filter: blur(10px);
-
     -webkit-backdrop-filter: blur(10px);
 }
-
 .displayA {
     display: none;
 }
-
 .displayO {
     display: none;
 }
-
-.myLinks {
-    display: block;
-}
-
 #logo_Menu {
     justify-content: space-between;
     display: flex;
 }
-
 #logo img {
     width: 90px;
     height: auto;
 }
-
 #config {
     margin: auto;
 }
-
 #config-items {
     padding-left: 10px;
     margin-bottom: 10px;
 }
-
 #h4NavBar {
     margin-top: 15px;
 }
-
 .separacion {
     margin-bottom: 5px;
 }
-
-.giracion img {
-    transform: rotate(360deg);
-    transition: 2s;
-}
-
-.giracion1 img {
-    transform: rotate(-360deg);
-    transition: 2s;
-}
-
 #config img {
     width: 20px;
 }
-
-#contHamb {
-    width: 70%;
-    height: 40px;
-    float: left;
-}
-
 .hamburger-menu {
     width: 8%;
     height: 3vh;
@@ -161,23 +107,15 @@ li {
     margin-top: 5.7%;
     margin-right: 7%;
     margin-left: -45%;
-    transform: rotate(0deg);
+    transform: rotate(0);
     transition: 1s;
     float: right;
 }
-
 .line {
     width: 25px;
     height: 3px;
     background-color: #f2f2f2;
 }
-
-.menu-rotate {
-    transform: rotate(90deg);
-    transition: 1s;
-}
-
-/* FOOTER */
 footer {
     background: #514eff;
     margin-top: 10%;
@@ -188,48 +126,38 @@ footer {
     height: auto;
     margin-bottom: 25px;
     border-radius: 10px;
-    /* background-color: #f2f2f283; */
 }
-
 #logo_footer {
     width: 100%;
     background-color: #f2f2f283;
     margin-left: 5px;
     border-radius: 10px;
 }
-
 .logo_info {
     width: 100%;
     margin: auto;
     padding: 12px 0;
 }
-
 #info_contacto {
     margin: 10px auto;
     padding: 20px;
     background-color: #f2f2f283;
 }
-
-/* MAPA */
 iframe {
     width: 100%;
     height: 100px;
 }
-
 .mapa {
     width: 90%;
     height: 145px;
     margin: 15px auto;
 }
-
 #rights {
     text-align: center;
     font-family: sans-serif;
     font-weight: lighter;
     color: #00000088;
 }
-
-/* HERO */
 .hero {
     margin-bottom: 20px;
     background-position: left;
@@ -256,7 +184,6 @@ iframe {
     border-radius: 8px;
     transition: 0.3s;
 }
-
 #reserva_boton {
     width: 100%;
     display: block;
@@ -264,25 +191,20 @@ iframe {
     color: #f2f2f2;
     font-size: 18px;
 }
-
 #btn_reserva:hover {
     background-color: #3b82f6;
     box-shadow: 1px 1px 1px 10px #3b83f65f;
     color: #fff;
 }
-
-/* Distintos heros */
 #hero_inicio {
-    background-image: url("imagenes/Hero_index_mobil.jpg");
+    background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/Hero_index_mobil.jpg);
 }
 #hero_nosotros {
-    background-image: url("imagenes/nosotros.jpg");
+    background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/nosotros.jpg);
 }
 #hero_contacto {
-    background-image: url("imagenes/contacto.jpg");
+    background-image: url(https://nadiasosa.github.io/proyecto2_final/https://nadiasosa.github.io/proyecto2_final/https://nadiasosa.github.io/proyecto2_final/imagenes/contacto.jpg);
 }
-
-/* ESTA EN GENERAL YA QUE ES USADO */
 .bloqueSeccion {
     width: auto;
     width: 90vw;
@@ -291,93 +213,69 @@ iframe {
     color: #f2f2f2;
     padding: 10px;
 }
-
 #inicioServicio {
     display: none;
 }
-
 .item_servicio > span:hover {
     color: #f2f2f2;
-    font-weight: bold;
+    font-weight: 700;
 }
-
-/* ---------- ICONOS DE REDES ------------- */
 .iconos {
     width: 45%;
     margin: auto;
     height: 20px;
-    /* background-color: #f2f2f2; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
     gap: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.055);
 }
-
-/* for all social containers*/
 .socialContainer {
     width: 30px;
     height: 30px;
-    background-color: rgb(44, 44, 44);
+    background-color: #2c2c2c;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     transition-duration: 0.3s;
 }
-/* instagram*/
 .containerOne:hover {
     background-color: #d62976;
     transition-duration: 0.3s;
 }
-/* twitter*/
-.containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: 0.3s;
-}
-/* Whatsapp*/
 .containerFour:hover {
     background-color: #128c7e;
     transition-duration: 0.3s;
 }
-
 .socialContainer:active {
     transform: scale(0.9);
     transition-duration: 0.3s;
 }
-
 .socialSvg {
     width: 17px;
 }
-
 .socialSvg path {
-    fill: rgb(255, 255, 255);
+    fill: #fff;
 }
-
 .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
 }
-
 @keyframes slide-in-top {
     0% {
         transform: translateY(-50px);
         opacity: 0;
     }
-
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
-
-/*  --------------------- INDEX  --------------------- */
-
 .iconoServicio {
     width: 10%;
     margin-right: 5px;
 }
-
 #reseñas {
     width: 100%;
     margin: 50px auto;
@@ -385,12 +283,10 @@ iframe {
     text-align: justify;
     overflow: hidden;
 }
-
 .slider {
     position: relative;
     width: 100%;
 }
-
 .slider-wrapper {
     display: flex;
     align-items: center;
@@ -398,12 +294,10 @@ iframe {
     width: fit-content;
     transition: transform 0.5s ease;
 }
-
 .slider-card-img {
     width: 100px;
     height: 160px;
 }
-
 .slider-card {
     height: 100%;
     width: 45%;
@@ -414,29 +308,26 @@ iframe {
     box-shadow: 2px 2px 0.8px #0009;
     border-radius: 10px;
     margin: 0 10px;
-    overflow: hidden; /* Asegura que el contenido adicional no se muestre */
+    overflow: hidden;
 }
-
 .review {
     font-size: 10px;
     word-wrap: break-word;
     margin-bottom: 10px;
     padding: 0;
 }
-
 .author {
     font-size: 1em;
     text-align: center;
     color: #d6d6d6;
 }
-
 .btnSlider {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    color: white;
+    color: #fff;
     font-size: 1em;
     padding: 10px;
     width: 25px;
@@ -444,119 +335,32 @@ iframe {
     cursor: pointer;
     border-radius: 10px;
 }
-
 .prev {
-    left: 0px;
-}
-
-.next {
-    right: 0px;
-}
-
-/*  ---------------------PAGINA NOSOTROS--------------------- */
-#contenedorNosotros {
-    width: 90%;
-    margin: 4vh auto;
-    padding: 5px;
-}
-.bloqueNosotros p {
-    padding: 8px 10px;
-}
-
-.service_card {
-    width: 100%;
-    height: 300px;
-    margin: 8px auto;
-    background-size: cover;
-    position: relative;
-}
-.overlay {
-    position: absolute;
-    bottom: 0;
     left: 0;
+}
+.next {
     right: 0;
-    overflow: hidden; /* Oculta el contenido que se desborde */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
-    padding: 20px;
-    transition: height 0.3s; /* Transición suave de altura */
-    height: 7%; /* Altura inicial que muestra solo la primera línea */
-}
-.overlay:hover {
-    height: 40%;
-}
-
-.overlay_text {
-    color: white;
-    font-size: 18px;
-    line-height: 1.5; /* Espaciado entre líneas */
-}
-
-#servicio_electric_Charge {
-    background-image: url("imagenes/electric-charge_288x192.webp");
 }
 #servicio_car_wash {
-    background-image: url("imagenes/CarWash_288x192.webp");
+    background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/CarWash_288x192.webp);
 }
-#servicio_coffee_shop {
-    background-image: url("imagenes/coffeeShop_288x192.webp");
-}
-
-#contenedorNosotros p {
-    padding: 10px;
-    text-align: justify;
-}
-
 #img_nosotros {
     display: none;
 }
-
-/* Lo de arriba es el css "completo" del sitio */
-
-/* Lo de abajo es el css del testeo1.css */
-
 .default {
     font-size: 16px;
 }
-
-.texto-chico {
-    font-size: 14px;
-}
-
-.texto-mediano {
-    font-size: 18px;
-}
-
-.texto-grande {
-    font-size: 24px;
-}
-
 .pc {
     display: none;
 }
-
 .oscuro {
     background-color: #1b1919;
-    /* background-color: #0B0A29; */
     color: #f2f2f2;
 }
-
 .claro {
     background-color: #f2f2f2;
     color: #2f2f2f;
 }
-
-.ocultar {
-    display: none !important;
-}
-
-.mostrarTexto {
-    display: block;
-}
-
-.ocultarTexto {
-    display: none;
-}
-
 #contLoader {
     z-index: 1000;
     width: 100vw;
@@ -566,20 +370,17 @@ iframe {
     position: fixed;
     background-color: #f2f2f2;
 }
-
 #page {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #cont {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-
 #ring {
     width: 190px;
     height: 190px;
@@ -587,118 +388,77 @@ iframe {
     border-radius: 50%;
     position: absolute;
 }
-
 #ring:nth-child(1) {
-    border-bottom: 8px solid rgb(255, 141, 249);
+    border-bottom: 8px solid #ff8df9;
     animation: rotate1 2s linear infinite;
 }
-
 @keyframes rotate1 {
     from {
         transform: rotateX(50deg) rotateZ(110deg);
     }
-
     to {
         transform: rotateX(50deg) rotateZ(470deg);
     }
 }
-
 #ring:nth-child(2) {
-    border-bottom: 8px solid rgb(255, 65, 106);
+    border-bottom: 8px solid #ff416a;
     animation: rotate2 2s linear infinite;
 }
-
 @keyframes rotate2 {
     from {
         transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
     }
-
     to {
         transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
     }
 }
-
 #ring:nth-child(3) {
-    border-bottom: 8px solid rgb(0, 255, 255);
+    border-bottom: 8px solid #0ff;
     animation: rotate3 2s linear infinite;
 }
-
 @keyframes rotate3 {
     from {
         transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
     }
-
     to {
         transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
     }
 }
-
 #ring:nth-child(4) {
-    border-bottom: 8px solid rgb(252, 183, 55);
+    border-bottom: 8px solid #fcb737;
     animation: rotate4 2s linear infinite;
 }
-
 @keyframes rotate4 {
     from {
         transform: rotateX(70deg) rotateZ(270deg);
     }
-
     to {
         transform: rotateX(70deg) rotateZ(630deg);
     }
 }
-
-/* ----------------- Contacto ---------------------- */
-
-h1#titulo_contacto{
-  background-color: #2f2f2f;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
-
 .content {
     margin-top: 5vh;
     width: 100vw;
     height: 60vh;
 }
-
-form {
-    width: 75%;
-    height: auto;
-    margin: auto;
-    padding: 30px;
-    background-color: #292929;
-    color: #f2f2f2;
-    box-shadow: 0 1px 20px #0009;
-}
-
 label {
     text-shadow: 1px 1px 0.8px #838383;
 }
-
-input,
-textarea {
+input {
     width: 100%;
     margin: 10px auto;
 }
-
-input,
-textarea {
-    border: 0px;
+input {
+    border: 0;
     background-color: #2f2f2f;
     color: #ddd;
     border-bottom: 2px solid #8b8b8b;
     transition: border-bottom 1s, background-color 1s;
 }
-
-input:hover,
-textarea:hover {
+input:hover {
     background-color: #7c7c7c;
 }
-
-input:focus-visible,
-textarea:focus-visible {
+input:focus-visible {
     outline-width: 1px;
     color: #2f2f2f;
     background-color: #ddd;
@@ -709,42 +469,20 @@ input[type="radio"] {
     height: 15px;
     width: 15px;
 }
-textarea {
-    height: 90px;
-    resize: none;
-}
-.enviar_boton {
-    text-align: center;
-}
 button {
     margin: 15px;
-    font-weight: bold;
+    font-weight: 700;
     width: 60%;
     height: 30px;
     border-radius: 10px;
     background-color: #363636;
     color: #ddd;
-    border: 0px;
+    border: 0;
     transition: color 1s, background-color 1s;
 }
-
 button:hover {
     color: #363636;
     background-color: #ddd;
-}
-
-/* Mensajes */
-
-.alert_bad {
-    margin-left: 5px;
-    color: rgb(255, 0, 0);
-    font-weight: lighter;
-}
-
-.alert_good {
-    display: block;
-    color: rgb(32, 255, 32);
-    font-weight: lighter;
 }
 #hero_contacto {
     height: 100vh;
@@ -752,156 +490,42 @@ button:hover {
     flex-direction: column;
 }
 #footer_2 {
-    margin: 0px;
+    margin: 0;
 }
-
-/*  --------------- RESERVA ------------------ */
-#contenido_reserva {
-    margin-top: 20px;
-    width: 90%;
-    margin: auto;
+#reserva {
+    max-width: 578px;
+    height: auto;
 }
-
-#reserva{
-  max-width: 578px;
-  height: auto;
-  
+#reserva label:not([class^="salida"]) {
+    display: block;
+    margin: 2px;
 }
-/* TODOS LOS LABEL MENOS EL QUE TIENE LA CLASE SALIDA */
-#reserva label:not([class^="salida"]){
-  display: block;
-  margin: 2px;
+#reserva input {
+    margin: 10px;
+    margin: 15px 0;
 }
-#reserva input{
-  margin: 10px;
-  margin: 15px 0px;
+h3 {
+    margin-bottom: 8px;
 }
-
-.selects{
-  display: flex;
-  justify-content: center;
-  width: 20%;
-  margin: auto;
-}
-.selects select{
-  width: 100px;
-}
-
-/* 
-.salida{
-  display: none;
-} */
-/* MENSAJE FLOTANTE */
-
-.overlay_reserva{
-  position: fixed;
-  display: none; /* Oculto por defecto */
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0); /* Fondo negro con opacidad */
-  z-index: 10; /* Orden de apilamiento */
-}
-
-
-.floating-message {
-  width: 90vw;
-  max-width: 423px;
-  position: fixed;
-  top: 10vh;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 2; 
-  display: none; 
-}
-
-h3{
-  margin-bottom: 8px;
-}
-/* 
-.floating-message span{
-  display: block;
-} */
-
-.floating-message button {
-  background-color: #555;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.floating-message button:hover {
-  background-color: #777;
-}
-
-.fechas{
-  display: initial;
-  margin-left: 15%;
-  font-size: 20px;
-}
-#tiempo_salida{
-  margin-left: 18%;
-}
-
-#nextButton{background-color: #005c00;}
-#cancelButton{background-color: #5c0000;}
-
-.floating-message h3{
-  text-align: center;
-}
-
-#btsConfirmacion{
-  display: flex;
-}
-
-
 @media (min-width: 375px) {
     .hamburger-menu {
         width: 8%;
         margin-top: 4.7%;
         margin-right: 6%;
     }
-
-    /* Distintos heros  MOBILE*/
     #hero_inicio {
-        background-image: url("imagenes/Hero_index_Tablet.jpg");
+        background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/Hero_index_Tablet.jpg);
     }
     #hero_nosotros {
-        background-image: url("imagenes/Hero_nosotros_Tablet.jpg");
+        background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/Hero_nosotros_Tablet.jpg);
     }
     #hero_contacto {
-        background-image: url("imagenes/contacto.jpg");
-    }
-
-    /* Distintas cartas de  Servicios (Pagina Nosotros) */
-    #servicio_electric_Charge {
-        background-image: url("imagenes/electric-charge_405x270.webp");
+        background-image: url(imagenes/contacto.jpg);
     }
     #servicio_car_wash {
-        background-image: url("imagenes/CarWash_405x270.webp");
-    }
-    #servicio_coffee_shop {
-        background-image: url("imagenes/coffeeShop_405x270.webp");
-    }
-
-    .selects{
-      display: flex;
-      width: 90%;
-      margin: auto;
-    }
-    .selects select{
-      width: 350px;
+        background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/CarWash_405x270.webp);
     }
 }
-
 @media (min-width: 425px) {
     h1 {
         font-size: 35px;
@@ -913,22 +537,18 @@ h3{
     .topnav {
         padding: 0 10px;
     }
-
     #config {
         margin-right: 200px;
     }
-
     .slider-card {
         min-height: 300px;
         width: 250px;
         height: 350px;
         text-align: center;
     }
-
     .slider-card-img {
         width: 150px;
     }
-
     .review {
         font-size: 12px;
         text-align: left;
@@ -944,25 +564,18 @@ h3{
     .displayA {
         display: block;
     }
-
     .displayO {
         display: none;
     }
     .item {
-        width: 0px;
+        width: 0;
         display: inline;
     }
     #logo_Menu {
         width: 30%;
     }
-
     .bloqueSeccion {
         width: auto;
-        /* max-width: 90vw; */
-    }
-    .myLinksAnchors {
-        width: 70%;
-        justify-content: space-between;
     }
     .topnav {
         display: flex;
@@ -974,7 +587,6 @@ h3{
         text-align: center;
         padding: 5px 10px;
     }
-
     .iconoServicio {
         width: 25px;
     }
@@ -988,14 +600,12 @@ h3{
         width: 280px;
         border-radius: 15px 25px;
     }
-
     .slider-card {
         min-height: 400px;
         width: 250px;
         height: 450px;
         text-align: center;
     }
-
     .slider-card-img {
         width: 150px;
     }
@@ -1006,48 +616,24 @@ h3{
         font-size: 15px;
         padding: 8px 8px;
     }
-
-    /* Pagina nosotros */
     .nosotros_img {
         display: flex;
-        /* margin: 20px 0; */
         justify-content: space-evenly;
-    }
-    .service_card {
-        width: 350px;
-        margin-left: 10px;
-        height: 250px;
-    }
-
-    .overlay:hover {
-        height: 85%;
     }
     #hero_contacto {
         margin: 0;
         height: 100vh;
     }
-
-    /* CONTACTO TABLE */
-    form {
-        max-width: 700px;
-        border-radius: 15px;
-        box-shadow: 2px 2px 0.8px #0009;
-    }
-    #form_contact{
-      height: 320px;
-    }
-
     .footer {
         display: flex;
     }
     #footer_2 {
-        margin: 0px;
+        margin: 0;
     }
     .logo_info {
         display: flex;
         padding: 12px 0;
     }
-
     #info_contacto {
         display: flex;
         margin: auto;
@@ -1069,20 +655,16 @@ h3{
         margin: auto;
     }
 }
-
-/* Adaptacion para  DESKTOP*/
 @media (min-width: 1024px) {
-    /* Distintos heros MINI-LAPTOP*/
     #hero_inicio {
-        background-image: url("imagenes/Hero_index_laptop.jpg");
+        background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/Hero_index_laptop.jpg);
     }
     #hero_nosotros {
-        background-image: url("imagenes/Hero_nosotros_laptop.jpg");
+        background-image: url(https://nadiasosa.github.io/proyecto2_final/imagenes/Hero_nosotros_laptop.jpg);
     }
     #hero_contacto {
-        background-image: url("imagenes/contacto.jpg");
+        background-image: url(imagenes/contacto.jpg);
     }
-
     .slider-card-img {
         width: 200px;
     }
@@ -1098,7 +680,7 @@ h3{
     .item_servicio > span {
         color: #f2f2f2;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 700;
     }
     h1 {
         font-size: 50px;
@@ -1107,69 +689,32 @@ h3{
         width: 300px;
         height: 50px;
     }
-
     #btn_reserva a {
         font-size: 25px;
-    }
-
-    /* Pagina nosotros */
-    .bloqueNosotros {
-        max-width: 95vw;
-        width: 90vw;
     }
     .nosotros_img {
         display: flex;
     }
-    .service_card {
-        width: 300px;
-        margin-left: 10px;
-        height: 250px;
-        margin: auto;
-    }
-
-    .overlay:hover {
-        height: 85%;
-    }
 }
-
 @media (min-width: 1440px) {
     .links {
         font-size: 18px;
     }
-
     .slider-card {
         min-height: 400px;
         width: 20%;
         height: 500px;
         text-align: center;
     }
-    /* Pagina nosotros */
     .nosotros_img {
         display: flex;
         margin: 20px 0;
         justify-content: space-evenly;
     }
-    #form_contact {
-        width: 50%;
-        font-size: 15px;
-    }
-
-    #form_contact input,
-    textarea {
-        font-size: 1.2em;
-        padding: 2px 5px 0 5px;
-    }
-    #form_contact input {
-        height: 25px;
-    }
-    #form_contact button {
-        height: 35px;
-    }
 }
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1b1919;
-        color: white;
+        color: #fff;
     }
 }

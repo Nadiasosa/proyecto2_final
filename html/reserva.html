@@ -77,44 +77,43 @@
             </div>
             </nav>
         </header>
-    
-    <main id="main_reserva">
-        
-         <div id="contenido_reserva">
-            <h1 style="color: #f2f2f2; text-align: center;">RESERVAR</h1>
-            <div class="formulario">
-                <form id="reserva">
-                    <label for="fecha_de_entrada">Fecha de entrada</label>
-                    <input type="datetime-local" id="fecha_de_entrada">
-                    <label for="fecha_de_salida" class="salida" >Fecha de Salida</label>
-                    <input type="datetime-local" class="salida"  id="fecha_de_salida">
-                    <div class="selects">
-                        <select id="vehiculo">
-                            <option>Vehiculo</option>
-                            <option value="auto">Automovil</option>
-                            <option value="moto">Motocicleta/Quad</option>
-                        </select>
-                    </div>
-                    <div class="botones_reserva">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Enviar</button>
-                    </div>
-                </form>
-                <div id="overlay_reserva"></div>
-                <div class="floating-message" id="floatingMessage" >
-                    <h3>RESERVA</h3>
-                    <span>ENTRADA:</span><p class="fechas" id="tiempo_entra"></p>
-                    <br>
-                    <span>SALIDA :</span><p class="fechas" id="tiempo_salida"></p>
-                    <div id="btsConfirmacion">
-                        <button id="nextButton">Confirmar</button>
-                        <button id="cancelButton">Cancelar</button>
+        <div class="hero" id="hero_reserva">
+            <div id="contenido_reserva">
+                <h1 style="color: #f2f2f2; text-align: center;">RESERVAR</h1>
+                <div class="formulario">
+                    <form id="reserva">
+                        <label for="fecha_de_entrada">Fecha de entrada</label>
+                        <input type="datetime-local" id="fecha_de_entrada">
+                        <label for="fecha_de_salida" class="salida" >Fecha de Salida</label>
+                        <input type="datetime-local" class="salida"  id="fecha_de_salida">
+                        <div class="selects">
+                            <select id="vehiculo">
+                                <option>Vehiculo</option>
+                                <option value="auto">Automovil</option>
+                                <option value="moto">Motocicleta/Quad</option>
+                            </select>
+                        </div>
+                        <div class="botones_reserva">
+                            <button class="boton_reserva"  type="submit">Enviar</button>
+                            <button class="boton_reserva"  type="reset">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="overlay_reserva"></div>
+                    <div class="floating-message" id="floatingMessage" >
+                        <h3>RESERVA</h3>
+                        <span>ENTRADA:</span><p class="fechas" id="tiempo_entra"></p>
+                        <br>
+                        <span>SALIDA :</span><p class="fechas" id="tiempo_salida"></p>
+                        <div id="btsConfirmacion">
+                            <button id="nextButton">Confirmar</button>
+                            <button id="cancelButton">Cancelar</button> 
+                        </div>
                     </div>
                 </div>
-            </div>
-         </div>     
-    </main>
-    <footer>
+             </div>   
+            <footer id="footer_2">
+        </div>
+        <footer id="footer_2">
         <div class="footer">
             <div class="logo_info">
                 <div id="logo_content">
