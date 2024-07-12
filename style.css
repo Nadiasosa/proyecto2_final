@@ -119,11 +119,6 @@ li {
     margin: auto;
 }
 
-#config-items {
-    padding-left: 10px;
-    margin-bottom: 10px;
-}
-
 #h4NavBar {
     margin-top: 15px;
 }
@@ -989,9 +984,6 @@ h3{
         display: block;
     }
 
-    .displayO {
-        display: none;
-    }
     .item {
         width: 0px;
         display: inline;
@@ -1215,5 +1207,9 @@ h3{
     body {
         background-color: #1b1919;
         color: white;
+    }
+    #contLoader{
+        background-color: #2f2f2f;
+        color: #f2f2f2;
     }
 }

@@ -89,7 +89,7 @@ document.getElementById("config").addEventListener("click", function (){
 
 var loader = document.getElementById("contLoader");
 function loading(){
-    setTimeout(timer, 0);
+    setTimeout(timer, 5000);
 }
 
 function timer(){
