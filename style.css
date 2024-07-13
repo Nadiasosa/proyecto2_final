@@ -115,10 +115,6 @@ li {
     height: auto;
 }
 
-#config {
-    margin: auto;
-}
-
 #h4NavBar {
     margin-top: 15px;
 }
@@ -137,9 +133,32 @@ li {
     transition: 2s;
 }
 
-#config img {
-    width: 20px;
+#config {
+    z-index: 3;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 80%;
+    left: 10%;
+    background-color: #f2f2f2;
+    border-radius: 100%;
 }
+
+#btnSettingsOscuro{
+    display: block;
+}
+
+#btnSettingsBlanco{
+    display: none;
+}
+
+#config img {
+    width: 70%;
+    height: 70%;
+    margin: 6px;
+}
+
+
 
 #contHamb {
     width: 70%;
@@ -386,7 +405,7 @@ iframe {
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
@@ -1005,10 +1024,6 @@ h3{
         padding: 0 10px;
     }
 
-    #config {
-        margin-right: 200px;
-    }
-
     .slider-card {
         min-height: 300px;
         width: 250px;
@@ -1264,5 +1279,14 @@ h3{
     #contLoader{
         background-color: #2f2f2f;
         color: #f2f2f2;
+    }
+    #config{
+        background-color: #2f2f2f;
+    }
+    #btnSettingsBlanco{
+        display: block;
+    }
+    #btnSettingsOscuro{
+        display: none;
     }
 }
