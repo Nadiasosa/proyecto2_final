@@ -37,6 +37,7 @@ function anchors(){
 
 function desplegarconfig(){
     var g = document.getElementById("myLinksAnchor");
+    // Es para que no esten los dos (navbar y config)
     if(g.className === "displayA"){        
         girar1();
         desplegar();
@@ -58,13 +59,28 @@ function girar1(){
 
 function desplegar(){
     let configitems = document.getElementById("config-items");
-
-    if(configitems.className === "displayO"){
-        configitems.className = "myLinks";
-    } else {
-        configitems.className = "displayO";
+    let width = Porcentaje();
+    console.log(width);
+    if(width === 0){
+        document.getElementById("myNav").style.width = "100%";
+    } else if (width === 100){
+        document.getElementById("myNav").style.width = "0%";
     }
 }
+
+// SOLO POR PRUEBAS
+function Porcentaje() {
+    // Funcion para obtener el "porcentaje" del elemento OVERLAY
+    // Obtener tamaño
+    const width = document.getElementById("myNav").offsetWidth;
+    // Cont padre
+    const containerWidth = document.body.offsetWidth;
+    // calcular porcentaje
+    const overPercentage = (width /containerWidth) * 100;
+    
+    return overPercentage;
+}
+
 
 // evento para cambiar el estado de la barra
 window.addEventListener('scroll', function () {
