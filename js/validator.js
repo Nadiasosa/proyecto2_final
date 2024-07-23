@@ -70,7 +70,7 @@ function validateEmail(email) {
         formData.append('message', message);
 
         // Enviar los datos a formsubmit.co
-        fetch('https://formsubmit.co/34a6dfed0957f008921dc6b0959f8f8d  ', {
+        fetch('https://formsubmit.co/federg772@gmail.com', {
         method: 'POST',
         headers: {
             'Accept': 'application/json'
