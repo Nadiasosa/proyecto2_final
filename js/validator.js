@@ -71,23 +71,29 @@ function validateEmail(email) {
 
         // Enviar los datos a formsubmit.co
         fetch('https://formsubmit.co/federg772@gmail.com', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json'
-        },
-        body: formData
+          method: 'POST',
+          headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              email: email,
+              subject: subject,
+              message: message
+          })
         })
         .then(response => response.json())
         .then(data => {
-        console.log('Respuesta de formsubmit.co:', data);
-        // Mostrar mensaje de éxito al usuario
-        alert_message("alert_enviado", "Su mensaje ha sido enviado correctamente.");
+            console.log('Respuesta de formsubmit.co:', data);
+            // Mostrar mensaje de éxito al usuario
+            alert_message("alert_enviado", "Su mensaje ha sido enviado correctamente.");
         })
         .catch(error => {
-        console.error('Error al enviar el formulario:', error);
-        // Mostrar mensaje de error al usuario
-        alert_message("alert_enviado", "Hubo un error al enviar su mensaje. Por favor, inténtelo nuevamente.");
+            console.error('Error al enviar el formulario:', error);
+            // Mostrar mensaje de error al usuario
+            alert_message("alert_enviado", "Hubo un error al enviar su mensaje. Por favor, inténtelo nuevamente.");
         });
+      
     }
   });
 
