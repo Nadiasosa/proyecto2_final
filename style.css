@@ -30,6 +30,7 @@ a {
 }
 
 p {
+    /* Cambiar tipo de LETRA (EJ:CAVIAR DREAMS) */
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -139,7 +140,7 @@ li {
     width: 40px;
     height: 40px;
     top: 80%;
-    left: 10%;
+    /* left: 10%; SOLO MOBILE */
     background-color: #f2f2f2;
     border-radius: 100%;
 }
@@ -1149,6 +1150,10 @@ h3{
     .logo_info {
         display: flex;
         padding: 12px 0;
+    }
+
+    #config{
+        left: 2%;
     }
 
     #info_contacto {
