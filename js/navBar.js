@@ -1,7 +1,9 @@
 function menu(){
     // Funcion al dar click al boton
-    var g = document.getElementById("config-items");
-    if(g.className === "displayO"){
+
+    let width = Porcentaje();
+
+    if (width === 0){
         girar();
         myLinks();
         anchors();
@@ -105,7 +107,7 @@ document.getElementById("config").addEventListener("click", function (){
 
 var loader = document.getElementById("contLoader");
 function loading(){
-    setTimeout(timer, 5000);
+    setTimeout(timer, 0);
 }
 
 function timer(){
@@ -151,7 +153,23 @@ window.addEventListener("load", loading);
 
 function cambiarTema(tema){
     var body = document.body;
+    var Blanco = "#f2f2f2";
+    var Negro = "#2f2f2f";
+    var config = document.getElementById("config");
+    var btnOscuro = document.getElementById("btnSettingsOscuro");
+    var btnBlanco = document.getElementById("btnSettingsBlanco");
 
+    if (tema === 'oscuro'){
+        config.style.backgroundColor = Negro;
+        btnOscuro.style.display = "none";
+        btnBlanco.style.display = "block";
+    } else {
+        config.style.backgroundColor = Blanco;
+        btnBlanco.style.display = "none";
+        btnOscuro.style.display = "block";
+    }
+
+    
     body.classList.remove('oscuro', 'claro');
 
     body.classList.add(tema);
