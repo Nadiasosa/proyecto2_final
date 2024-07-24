@@ -77,8 +77,9 @@ function validateEmail(email) {
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                name: "FormSubmit",
-                message: "I'm from Devro LABS"
+                name: email,
+                subject: subject,
+                message: message
             })
         })
         .then(response => response.json())
