@@ -69,18 +69,17 @@ function validateEmail(email) {
         formData.append('subject', subject);
         formData.append('message', message);
 
-        // Enviar los datos a formsubmit.co
-        fetch('https://formsubmit.co/federg772@gmail.com', {
-          method: 'POST',
-          headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-              email: email,
-              subject: subject,
-              message: message
-          })
+        // Enviar los datos a formsubmit.co (OBSOLETO) VER PROBLEMA
+          fetch("https://formsubmit.co/ajax/feder6772@gmail.com", {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: "FormSubmit",
+                message: "I'm from Devro LABS"
+            })
         })
         .then(response => response.json())
         .then(data => {
