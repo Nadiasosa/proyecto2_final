@@ -70,7 +70,8 @@ function validateEmail(email) {
         formData.append('message', message);
 
         // Enviar los datos a formsubmit.co (OBSOLETO) VER PROBLEMA
-          fetch("https://formsubmit.co/ajax/feder6772@gmail.com", {
+          // fetch("https://formsubmit.co/ajax/feder6772@gmail.com", {
+          fetch("https://formsubmit.co/ajax/34a6dfed0957f008921dc6b0959f8f8d", {
             method: "POST",
             headers: { 
                 'Content-Type': 'application/json',

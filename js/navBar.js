@@ -188,9 +188,7 @@ document.getElementById('navegador').addEventListener('change', function(){
 
     if (userPrefersDark){
         cambiarTema('oscuro');
-        alert("Tema Oscuro");
     } else {
         cambiarTema('claro');
-        alert("Tema Claro");
     }
 });
