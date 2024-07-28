@@ -149,9 +149,45 @@ li {
     display: block;
 }
 
+
 #btnSettingsBlanco{
     display: none;
 }
+
+.theme-switcher {
+    margin: auto;
+    padding: 3px;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid grey;
+  }
+  
+  .theme-switcher_switch {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .theme-switcher_switch:hover > .icon {
+    stroke: #323232;
+  }
+  
+  .theme-switcher_switch:active {
+    background-color: rgba(128, 128, 128, 0.35);
+  }
+  
+  .theme-switcher_switch:active > .icon {
+    stroke: white;
+  }
+  
 
 #config img {
     width: 70%;
@@ -1237,6 +1273,10 @@ h3{
 
     .overlay:hover {
         height: 85%;
+    }
+    .theme-switcher_switch {
+        width: 35px;
+        height: 35px;
     }
 }
 

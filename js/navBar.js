@@ -183,13 +183,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     // Eventos para los botones
-    btnBrowser.addEventListener("change", function () {
+    btnBrowser.addEventListener("click", function () {
         cambiarTema(temaNavegador());
+        console.log("TEMA browser")
     });
-    btnDark.addEventListener('change', function () {
+    btnDark.addEventListener('click', function () {
         cambiarTema("oscuro");
+        console.log("TEMA dark")
     });
-    btnLight.addEventListener("change", function () {
+    btnLight.addEventListener("click", function () {
         cambiarTema("claro");
+        console.log("TEMA light")
     });
 });
