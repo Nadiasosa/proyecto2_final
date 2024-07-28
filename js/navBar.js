@@ -150,45 +150,46 @@ window.addEventListener("load", loading);
         cambiarTamaño('default')
     })
 
-
-function cambiarTema(tema){
+// Nueva funcion para el control del cambio de tema. (SE agrega el guardar el tema en "LocalStorage" para mantenerlo entre paginas y proximas veces)
+document.addEventListener("DOMContentLoaded", function (event) {
+    // Variables
     var body = document.body;
-    var Blanco = "#f2f2f2";
-    var Negro = "#2f2f2f";
     var config = document.getElementById("config");
     var btnOscuro = document.getElementById("btnSettingsOscuro");
     var btnBlanco = document.getElementById("btnSettingsBlanco");
-
-    if (tema === 'oscuro'){
-        config.style.backgroundColor = Negro;
-        btnOscuro.style.display = "none";
-        btnBlanco.style.display = "block";
-    } else {
-        config.style.backgroundColor = Blanco;
-        btnBlanco.style.display = "none";
-        btnOscuro.style.display = "block";
-    }
-
+    var btnBrowser = document.getElementById("navegador");
+    var btnLight = document.getElementById("claro");
+    var btnDark = document.getElementById("oscuro");
+    var localTheme = localStorage.getItem('theme') || temaNavegador();
     
-    body.classList.remove('oscuro', 'claro');
+    // Inicialización del tema
+    cambiarTema(localTheme);
 
-    body.classList.add(tema);
-}
+    // Función para cambio de tema general
+    function cambiarTema(tema) {
+        console.log(body.firstElementChild.firstElementChild);
+        config.style.backgroundColor = (tema === 'oscuro') ? "#2f2f2f" : "#f2f2f2";
+        btnOscuro.style.display = (tema === 'oscuro') ? "none" : "block";
+        btnBlanco.style.display = (tema === 'oscuro') ? "block" : "none";
 
-document.getElementById('oscuro').addEventListener('change' , function() {
-    cambiarTema('oscuro');
-});
-
-document.getElementById('claro').addEventListener('change' , function() {
-    cambiarTema('claro');
-});
-
-document.getElementById('navegador').addEventListener('change', function(){
-    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (userPrefersDark){
-        cambiarTema('oscuro');
-    } else {
-        cambiarTema('claro');
+        body.classList.remove('oscuro', 'claro');
+        body.classList.add(tema);
+        localStorage.setItem("theme", tema);
     }
+
+    // Función para obtener el tema del navegador
+    function temaNavegador() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'oscuro' : 'claro';
+    }
+
+    // Eventos para los botones
+    btnBrowser.addEventListener("change", function () {
+        cambiarTema(temaNavegador());
+    });
+    btnDark.addEventListener('change', function () {
+        cambiarTema("oscuro");
+    });
+    btnLight.addEventListener("change", function () {
+        cambiarTema("claro");
+    });
 });

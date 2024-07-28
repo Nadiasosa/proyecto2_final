@@ -548,7 +548,7 @@ iframe {
     left: 0;
     right: 0;
     overflow: hidden; /* Oculta el contenido que se desborde */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    background-color: hsla(0, 0%, 0%, 0.5); /* Fondo oscuro semi-transparente */
     padding: 20px;
     transition: height 0.3s; /* Transición suave de altura */
     height: 7%; /* Altura inicial que muestra solo la primera línea */
@@ -1275,6 +1275,7 @@ h3{
         height: 35px;
     }
 }
+
 
 @media (prefers-color-scheme: dark) {
     body {
