@@ -140,3 +140,35 @@ document.addEventListener("DOMContentLoaded", function (event) {
         console.log("TEMA light")
     });
 });
+   function cambiarTamaño(tamaño) {
+        // Obtener los elementos <p>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        const elementsToStyle = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, label');
+    
+        elementsToStyle.forEach(element => {
+            // Verificar que el elemento no sea un <a>
+            if (element.tagName.toLowerCase() !== 'a') {
+                // Eliminar todas las clases de tamaño existentes
+                element.classList.remove('texto-chico', 'texto-mediano', 'texto-grande', 'default');
+                // Agregar la clase de tamaño deseada
+                element.classList.add(tamaño);
+            }
+        });
+    }
+
+    // Event listeners para los botones tipo radio
+    document.getElementById('tam-chico').addEventListener('change', function() {
+        cambiarTamaño('texto-chico');
+    });
+
+    document.getElementById('tam-mediano').addEventListener('change', function() {
+        cambiarTamaño('texto-mediano');
+    });
+
+    document.getElementById('tam-grande').addEventListener('change', function() {
+        cambiarTamaño('texto-grande');
+    });
+
+    document.getElementById('default').addEventListener('change', function() {
+        cambiarTamaño('default')
+    })
+
